@@ -1,0 +1,93 @@
+<project>
+    <description>
+        <goal>Create a high-end, modern website for Crazy Cuts Studio, visually inspired by www.mustachebarbershop.com.</goal>
+        <requirements>
+            <design>
+                <theme>Elegant, sleek, and professional layout with dark and gold color schemes</theme>
+                <visual_elements>Textured backgrounds (wood, leather, steel), high-quality photography, and refined typography</visual_elements>
+                <typography>
+                    <headers>Oswald, Montserrat (bold, modern)</headers>
+                    <body>Lora, Playfair Display (classic, luxurious)</body>
+                </typography>
+            </design>
+            <features>
+                <item>Fully responsive design for mobile, tablet, and desktop</item>
+                <item>Fast-loading, SEO-optimized</item>
+                <item>Minimal, elegant animations for a premium feel (hover effects, smooth scrolling)</item>
+                <item>No booking system—only direct phone and social media links</item>
+                <item>High-quality service imagery to showcase craftsmanship</item>
+            </features>
+            <pages>
+                <homepage>
+                    <hero_section>
+                        <background>Full-width image or video of a barber at work</background>
+                        <tagline>Precision Cuts. Timeless Style.</tagline>
+                        <cta>Clickable phone and social media links</cta>
+                    </hero_section>
+                    <quick_intro>
+                        <mission>Short, compelling brand introduction</mission>
+                        <testimonials>Rotating client reviews for credibility</testimonials>
+                    </quick_intro>
+                </homepage>
+                <about>
+                    <story>Brief history and brand philosophy</story>
+                    <team>Showcase of lead barbers with specialties</team>
+                </about>
+                <services>
+                    <list>Haircuts, beard trims, styling, and grooming services</list>
+                    <pricing>Clear, visually appealing service prices with hover effects</pricing>
+                    <before_after>Optional before & after section</before_after>
+                </services>
+                <gallery>
+                    <integration>Instagram live feed or manually updated high-quality images</integration>
+                </gallery>
+                <contact>
+                    <location>Embedded Google Maps for easy navigation</location>
+                    <phone>Clickable phone number</phone>
+                    <social_links>
+                        <platform>Instagram</platform>
+                        <platform>Facebook</platform>
+                    </social_links>
+                    <hours>Clearly displayed opening hours</hours>
+                </contact>
+            </pages>
+        </requirements>
+    </description>
+
+    <design_assets>
+        <logos>
+            <file path="/mnt/data/logo ccs.pdf">Primary and alternative logos for Crazy Cuts Studio</file>
+        </logos>
+        <color_palette>
+            <primary>#000000 (Black)</primary>
+            <secondary>#1C1C1C (Charcoal)</secondary>
+            <accent>#C8A448 (Gold)</accent>
+        </color_palette>
+    </design_assets>
+
+    <technical_specs>
+        <frontend>
+            <framework>HTML, CSS, JavaScript</framework>
+            <libraries>Tailwind CSS (preferred) or Bootstrap for fast styling</libraries>
+        </frontend>
+        <backend>
+            <optional>Not required—static website deployment</optional>
+        </backend>
+        <hosting>
+            <preferred>GitHub Pages, Netlify, or Vercel</preferred>
+        </hosting>
+    </technical_specs>
+
+    <seo>
+        <meta_tags>Keywords like "Best Barber in [City]", "Luxury Barber Experience"</meta_tags>
+        <performance>
+            <optimization>Lazy loading, compressed images, minified CSS/JS</optimization>
+            <structured_data>Schema markup for local business SEO</structured_data>
+        </performance>
+    </seo>
+
+    <output>
+        <format>Deliver as a full project with separate HTML, CSS, and JS files</format>
+        <deployment>Provide an easy-to-deploy solution with GitHub Pages or Netlify</deployment>
+    </output>
+</project>
