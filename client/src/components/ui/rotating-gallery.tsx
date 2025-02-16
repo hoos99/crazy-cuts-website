@@ -35,11 +35,14 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
 
   return (
     <div className={`relative w-full max-w-xs mx-auto h-[300px] ${className}`}> {/*Reduced dimensions*/}
-      <div className="absolute inset-0 [perspective:800px]"> {/*Reduced perspective depth*/}
+      {/* Reduced perspective depth */}
+      <div className="absolute inset-0 [perspective:800px]">
+        {/* Smoothed transitions */}
         <div 
-          className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-700 ease-in-out"  {/*Smoothed transitions*/}
+          className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-700 ease-in-out"
           style={{
-            transform: `translateZ(-150px) rotateY(${-currentIndex * 90}deg)`  {/*Reduced translateZ*/}
+            /* Reduced translateZ */
+            transform: `translateZ(-150px) rotateY(${-currentIndex * 90}deg)`
           }}
         >
           {images.map((image, index) => {
