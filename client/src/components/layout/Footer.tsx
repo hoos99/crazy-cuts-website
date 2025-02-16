@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Social */}
           <div className="flex flex-col items-center md:items-start">
-            <img src="/logo.svg" alt="Crazy Cuts Studio" className="h-16 mb-6" />
+            <img src="/crazy-cuts-logo.png" alt="Crazy Cuts Studio" className="h-16 mb-6" />
             <div className="flex space-x-4">
               <a
                 href={CONTACT_INFO.social.instagram}
