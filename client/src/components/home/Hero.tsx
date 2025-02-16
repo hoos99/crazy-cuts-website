@@ -32,14 +32,14 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="hero-heading text-white mb-6 tracking-wider">
+        <h1 className="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-6 tracking-wider">
           <span>Precision</span>{' '}
           <span>Cuts.</span>{' '}
           <span>Timeless</span>{' '}
           <span>Style.</span>
         </h1>
 
-        <p className="hero-subheading text-[#C8A448] mb-8 max-w-2xl mx-auto">
+        <p className="font-['Bebas_Neue'] text-2xl md:text-3xl text-[#C8A448] mb-8 max-w-2xl mx-auto tracking-wide">
           Step In for the Legendary JEENO FADE—Where Mastery Meets Style
         </p>
 
