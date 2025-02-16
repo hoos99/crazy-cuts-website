@@ -41,7 +41,7 @@ const Gallery = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {images.map((image, index) => {
-            const imageUrl = `${window.location.origin}${image.src}`;
+            const imageUrl = `/api/static${image.src}`;
             console.log('Loading image:', imageUrl); // Debug log
 
             return (
