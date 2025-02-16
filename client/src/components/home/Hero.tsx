@@ -2,6 +2,12 @@ import { Button } from "@/components/ui/button";
 import { CONTACT_INFO } from "@/lib/constants";
 
 const Hero = () => {
+  const handleBookNow = () => {
+    const message = encodeURIComponent("Hi, I would like to book an appointment for a haircut.");
+    const whatsappUrl = `https://wa.me/${CONTACT_INFO.phone.replace(/[^0-9]/g, '')}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center">
       {/* Background Overlay */}
@@ -37,7 +43,7 @@ const Hero = () => {
           <Button
             size="lg"
             className="bg-[#C8A448] hover:bg-[#B89338] text-white"
-            onClick={() => window.location.href = `tel:${CONTACT_INFO.phone}`}
+            onClick={handleBookNow}
           >
             Book Appointment
           </Button>

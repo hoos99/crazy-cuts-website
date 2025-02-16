@@ -26,12 +26,12 @@ export const SERVICES = [
 ];
 
 export const BUSINESS_HOURS = [
-  { day: "Monday", hours: "9:00 AM - 7:00 PM" },
+  { day: "Monday", hours: "Closed" },
   { day: "Tuesday", hours: "9:00 AM - 7:00 PM" },
   { day: "Wednesday", hours: "9:00 AM - 7:00 PM" },
   { day: "Thursday", hours: "9:00 AM - 8:00 PM" },
-  { day: "Friday", hours: "9:00 AM - 8:00 PM" },
-  { day: "Saturday", hours: "9:00 AM - 6:00 PM" },
+  { day: "Friday", hours: "9:00 AM - 7:00 PM" },
+  { day: "Saturday", hours: "9:00 AM - 7:00 PM" },
   { day: "Sunday", hours: "Closed" }
 ];
 
@@ -49,9 +49,9 @@ export const TEAM_MEMBERS = [
 ];
 
 export const CONTACT_INFO = {
-  phone: "+1 (555) 123-4567",
-  email: "info@crazycutsstudio.com",
-  address: "123 Style Street, Fashion District",
+  phone: "+27815683089",
+  email: "jenish10491@icloud.com",
+  address: "95, 6th Avenue Mayfair, JHB",
   social: {
     instagram: "https://instagram.com/crazycutsstudio",
     facebook: "https://facebook.com/crazycutsstudio"

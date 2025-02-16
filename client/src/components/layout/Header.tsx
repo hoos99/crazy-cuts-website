@@ -7,6 +7,12 @@ import { CONTACT_INFO } from "@/lib/constants";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleBookNow = () => {
+    const message = encodeURIComponent("Hi, I would like to book an appointment for a haircut.");
+    const whatsappUrl = `https://wa.me/${CONTACT_INFO.phone.replace(/[^0-9]/g, '')}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <header className="fixed w-full bg-black bg-opacity-95 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -34,7 +40,7 @@ const Header = () => {
             <Button 
               variant="outline" 
               className="border-[#C8A448] text-[#C8A448] hover:bg-[#C8A448] hover:text-white"
-              onClick={() => window.location.href = `tel:${CONTACT_INFO.phone}`}
+              onClick={handleBookNow}
             >
               Book Now
             </Button>
@@ -84,7 +90,7 @@ const Header = () => {
               <Button 
                 variant="outline" 
                 className="border-[#C8A448] text-[#C8A448] hover:bg-[#C8A448] hover:text-white w-full"
-                onClick={() => window.location.href = `tel:${CONTACT_INFO.phone}`}
+                onClick={handleBookNow}
               >
                 Book Now
               </Button>
