@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CONTACT_INFO } from "@/lib/constants";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 
 const Hero = () => {
   const handleBookNow = () => {
@@ -41,6 +42,11 @@ const Hero = () => {
         <p className="hero-subheading text-[#C8A448] mb-8 max-w-2xl mx-auto">
           Step In for the Legendary JEENO FADE—Where Mastery Meets Style
         </p>
+
+        {/* Testing LoadingSpinner */}
+        <div className="flex justify-center mb-8">
+          <LoadingSpinner size="lg" />
+        </div>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <Button
