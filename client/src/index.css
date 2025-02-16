@@ -1,7 +1,7 @@
 
 @font-face {
-  font-family: 'Freshcut';
-  src: url('/fonts/freshcut.woff2') format('woff2');
+  font-family: 'Composer JNL';
+  src: url('/fonts/composer-jnl.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +30,7 @@
 
 @layer components {
   .hero-heading {
-    font-family: 'Freshcut', sans-serif;
+    font-family: 'Composer JNL', sans-serif;
     @apply text-4xl md:text-6xl relative;
     perspective: 1000px;
     letter-spacing: 0.05em;
