@@ -4,7 +4,7 @@ import { useState } from "react";
 const Gallery = () => {
   const images = [
     {
-      src: "/images/premium-fade-cut-mayfair.jpg",
+      src: "/api/static/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG",
       alt: "Premium fade haircut by expert barber at Crazy Cuts Studio Mayfair"
     },
     {
