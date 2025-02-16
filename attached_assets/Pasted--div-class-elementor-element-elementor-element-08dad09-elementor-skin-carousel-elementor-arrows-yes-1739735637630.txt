@@ -1,0 +1,48 @@
+<div class="elementor-element elementor-element-08dad09 elementor-skin-carousel elementor-arrows-yes elementor-widget elementor-widget-media-carousel e-widget-swiper" data-id="08dad09" data-element_type="widget" data-settings="{&quot;effect&quot;:&quot;cube&quot;,&quot;autoplay_speed&quot;:2000,&quot;skin&quot;:&quot;carousel&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-swiper">
+					<div class="elementor-main-swiper swiper swiper-cube swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress" role="region" aria-roledescription="carousel" aria-label="Slides">
+				<div class="swiper-wrapper" id="swiper-wrapper-6a1f48f7fe3d9fb9" aria-live="off" style="cursor: grab; transition-duration: 0ms; transform-origin: 50% 50% -198px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(-360deg); --swiper-cube-translate-z: 0px;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" role="group" aria-roledescription="slide" data-swiper-slide-index="3" aria-label="4 / 4" style="width: 396px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px);">
+									<div class="elementor-carousel-image" role="img" aria-label="pexels-pnw-production-8377380" style="background-image: url('https://i0.wp.com/freshcut-barbershop.com/wp-content/uploads/2021/09/pexels-pnw-production-8377380-scaled.jpg?fit=1704%2C2560&amp;ssl=1')">
+
+			
+					</div>
+								<div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 1;"></div></div>
+											<div class="swiper-slide swiper-slide-duplicate-next" role="group" aria-roledescription="slide" data-swiper-slide-index="0" aria-label="1 / 4" style="width: 396px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px);">
+									<div class="elementor-carousel-image" role="img" aria-label="connor-botts-m9pYvoWYYyQ-unsplash (1)" style="background-image: url('https://i0.wp.com/freshcut-barbershop.com/wp-content/uploads/2021/09/connor-botts-m9pYvoWYYyQ-unsplash-1-scaled.jpg?fit=1440%2C2560&amp;ssl=1')">
+
+			
+					</div>
+								<div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 1;"></div></div>
+											<div class="swiper-slide" role="group" aria-roledescription="slide" data-swiper-slide-index="1" aria-label="2 / 4" style="width: 396px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(180deg) translate3d(396px, 0px, 396px);">
+									<div class="elementor-carousel-image" role="img" aria-label="zac-wolff-2qfYizn95pk-unsplash (1)" style="background-image: url('https://i0.wp.com/freshcut-barbershop.com/wp-content/uploads/2021/09/zac-wolff-2qfYizn95pk-unsplash-1-scaled.jpg?fit=1440%2C2560&amp;ssl=1')">
+
+			
+					</div>
+								<div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 1;"></div></div>
+											<div class="swiper-slide swiper-slide-prev" role="group" aria-roledescription="slide" data-swiper-slide-index="2" aria-label="3 / 4" style="width: 396px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(270deg) translate3d(-396px, 0px, 1188px);">
+									<div class="elementor-carousel-image" role="img" aria-label="oladimeji-odunsi-Wu3yqve2gnc-unsplash (1)" style="background-image: url('https://i0.wp.com/freshcut-barbershop.com/wp-content/uploads/2021/09/oladimeji-odunsi-Wu3yqve2gnc-unsplash-1-scaled.jpg?fit=2048%2C2560&amp;ssl=1')">
+
+			
+					</div>
+								<div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 1;"></div></div>
+											<div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-roledescription="slide" data-swiper-slide-index="3" aria-label="4 / 4" style="width: 396px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(360deg) translate3d(-1584px, 0px, 0px);">
+									<div class="elementor-carousel-image" role="img" aria-label="pexels-pnw-production-8377380" style="background-image: url('https://i0.wp.com/freshcut-barbershop.com/wp-content/uploads/2021/09/pexels-pnw-production-8377380-scaled.jpg?fit=1704%2C2560&amp;ssl=1')">
+
+			
+					</div>
+								<div class="swiper-slide-shadow-left" style="opacity: 0;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div>
+									<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" role="group" aria-roledescription="slide" data-swiper-slide-index="0" aria-label="1 / 4" style="width: 396px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(450deg) translate3d(0px, 0px, -1584px);">
+									<div class="elementor-carousel-image" role="img" aria-label="connor-botts-m9pYvoWYYyQ-unsplash (1)" style="background-image: url('https://i0.wp.com/freshcut-barbershop.com/wp-content/uploads/2021/09/connor-botts-m9pYvoWYYyQ-unsplash-1-scaled.jpg?fit=1440%2C2560&amp;ssl=1')">
+
+			
+					</div>
+								<div class="swiper-slide-shadow-left" style="opacity: 1;"></div><div class="swiper-slide-shadow-right" style="opacity: 0;"></div></div><div class="swiper-cube-shadow" style="height: 396px; transform: translate3d(0px, 218px, -198px) rotateX(90deg) rotateZ(0deg) scale(0.94);"></div></div>
+															<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-6a1f48f7fe3d9fb9">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-6a1f48f7fe3d9fb9">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>						</div>
+																	<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+				</div>
+								</div>
+				</div>
