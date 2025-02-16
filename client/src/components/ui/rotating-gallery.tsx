@@ -7,10 +7,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/attached_assets/Screenshot 2025-02-16 211934.png",
-  "/attached_assets/Screenshot 2025-02-16 212255.png",
-  "/attached_assets/Screenshot 2025-02-16 212330.png",
-  "/attached_assets/Screenshot 2025-02-16 212410.png"
+  "/api/static/Screenshot 2025-02-16 211934.png",
+  "/api/static/Screenshot 2025-02-16 212255.png",
+  "/api/static/Screenshot 2025-02-16 212330.png",
+  "/api/static/Screenshot 2025-02-16 212410.png"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
