@@ -1,3 +1,12 @@
+
+@font-face {
+  font-family: 'Freshcut';
+  src: url('/fonts/freshcut.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,9 +30,10 @@
 
 @layer components {
   .hero-heading {
-    font-family: 'Phoenix', sans-serif;
-    @apply text-4xl md:text-6xl font-bold relative;
+    font-family: 'Freshcut', sans-serif;
+    @apply text-4xl md:text-6xl relative;
     perspective: 1000px;
+    letter-spacing: 0.05em;
   }
 
   .hero-heading span {
