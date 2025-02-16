@@ -33,10 +33,7 @@ const Hero = () => {
         </div>
 
         <h1 className="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-6 tracking-wider animate-fade-in">
-          <span>Precision</span>{' '}
-          <span>Cuts.</span>{' '}
-          <span>Timeless</span>{' '}
-          <span>Style.</span>
+          Premium Barbering & Fades in Mayfair, Johannesburg
         </h1>
 
         <p className="font-['Bebas_Neue'] text-2xl md:text-3xl text-[#C8A448] mb-8 max-w-2xl mx-auto tracking-wide">
