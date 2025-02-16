@@ -47,6 +47,12 @@ export const TEAM_MEMBERS = [
     role: "Style Expert & Jeeno's Protégé",
     title: "Senior Barber",
     description: "Trained directly by Jeeno, Minhaz delivers a variation of the iconic Jeeno Fade with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required."
+  },
+  {
+    name: "Madhvi",
+    role: "Waxing & Threading Expert",
+    title: "Ladies' Specialist",
+    description: "Brows on point, skin silky smooth—Madhvi is the go-to for all ladies' services. Whether it's threading, waxing, or precision shaping, she makes sure every detail is flawless."
   }
 ];
 
