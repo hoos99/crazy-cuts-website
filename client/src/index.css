@@ -85,8 +85,27 @@
     }
   }
 
+  @keyframes glowPulseRed {
+    0% {
+      text-shadow: 0 0 5px #EF4444, 0 0 10px #EF4444;
+      transform: scale(1);
+    }
+    50% {
+      text-shadow: 0 0 20px #EF4444, 0 0 30px #EF4444;
+      transform: scale(1.05);
+    }
+    100% {
+      text-shadow: 0 0 5px #EF4444, 0 0 10px #EF4444;
+      transform: scale(1);
+    }
+  }
+
   .animate-glow-pulse {
     animation: glowPulse 2s infinite;
+  }
+
+  .animate-glow-pulse-red {
+    animation: glowPulseRed 2s infinite;
   }
 
   .hero-subheading {
