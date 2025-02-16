@@ -39,7 +39,7 @@ const Hero = () => {
           <span>Style.</span>
         </h1>
 
-        <p className="font-['Bebas_Neue'] text-2xl md:text-3xl text-[#C8A448] mb-8 max-w-2xl mx-auto tracking-wide">
+        <p className="font-['Bebas_Neue'] text-2xl md:text-3xl text-[#C8A448] mb-8 max-w-2xl mx-auto tracking-wide animate-glow-pulse">
           Step In for the Legendary JEENO FADE—Where Mastery Meets Style
         </p>
 
