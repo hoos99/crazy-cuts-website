@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -7,10 +6,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/api/static/Screenshot 2025-02-16 211934.png",
-  "/api/static/Screenshot 2025-02-16 212255.png",
-  "/api/static/Screenshot 2025-02-16 212330.png",
-  "/api/static/Screenshot 2025-02-16 212410.png"
+  "/Screenshot 2025-02-16 211934.png",
+  "/Screenshot 2025-02-16 212255.png",
+  "/Screenshot 2025-02-16 212330.png",
+  "/Screenshot 2025-02-16 212410.png"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
@@ -57,7 +56,7 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
               >
                 <img
                   src={image}
-                  alt={`Gallery image ${index + 1}`}
+                  alt={`Professional barbershop image ${index + 1}`}
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 rounded-lg" />
