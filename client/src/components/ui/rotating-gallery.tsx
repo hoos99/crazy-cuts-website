@@ -6,10 +6,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/api/static/image_1739733614000.png",
-  "/api/static/image_1739733780046.png",
-  "/api/static/image_1739733815318.png",
-  "/api/static/image_1739733858231.png"
+  "/api/static/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+  "/api/static/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+  "/api/static/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+  "/api/static/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
@@ -34,7 +34,7 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
   };
 
   return (
-    <div className={`relative w-full max-w-md mx-auto h-[300px] ${className}`}>
+    <div className={`relative w-full max-w-sm mx-auto h-[250px] ${className}`}>
       <div className="relative w-full h-full perspective-1000">
         <div className="relative w-full h-full transform-style-3d">
           {images.map((image, index) => {
