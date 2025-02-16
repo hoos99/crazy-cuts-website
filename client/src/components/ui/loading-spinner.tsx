@@ -17,22 +17,7 @@ export const LoadingSpinner = ({
 
   return (
     <div className={cn("relative", sizeClasses[size], className)}>
-      {/* Rotating Scissors */}
-      <svg
-        className="animate-spin-slow absolute inset-0"
-        viewBox="0 0 50 50"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10 10 L40 40 M40 10 L10 40"
-          stroke="white"
-          strokeWidth="3"
-          strokeLinecap="round"
-        />
-        <path d="M10 10 L10 40" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-        <path d="M40 10 L40 40" stroke="white" strokeWidth="3" strokeLinecap="round"/>
-
-      </svg>
+      <div className="w-full h-full border-4 border-white/30 rounded-full border-t-white animate-spin" />
     </div>
   );
 };
