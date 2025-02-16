@@ -6,10 +6,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/image_1739733858231.png",
-  "/image_1739733815318.png",
-  "/image_1739733780046.png",
-  "/image_1739733614000.png"
+  "/static/image_1739733858231.png",
+  "/static/image_1739733815318.png",
+  "/static/image_1739733780046.png",
+  "/static/image_1739733614000.png"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
