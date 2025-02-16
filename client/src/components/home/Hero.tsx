@@ -25,16 +25,12 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="font-oswald text-4xl md:text-6xl text-white mb-4 tracking-wider">
-          Step In for the Legendary <span className="text-[#C8A448]">JEENO FADE</span>
+        <h1 className="font-oswald text-4xl md:text-6xl text-white mb-6 tracking-wider">
+          Precision Cuts. Timeless Style.
         </h1>
 
-        <h2 className="font-oswald text-2xl md:text-3xl text-[#C8A448] mb-6">
-          Where Mastery Meets Style
-        </h2>
-
-        <p className="font-lora text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Experience luxury grooming at its finest, where tradition meets modern excellence.
+        <p className="font-lora text-xl md:text-2xl text-[#C8A448] mb-8 max-w-2xl mx-auto">
+          Step In for the Legendary JEENO FADE—Where Mastery Meets Style
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center">
