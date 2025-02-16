@@ -1,6 +1,5 @@
 import { CONTACT_INFO } from "@/lib/constants";
-import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const Gallery = () => {
   const images = [
@@ -19,28 +18,18 @@ const Gallery = () => {
     {
       src: "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
       alt: "Gallery image 4"
+    },
+    {
+      src: "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+      alt: "Gallery image 5"
+    },
+    {
+      src: "/f9efee92-d17a-4a01-8231-325e002761c4.JPG",
+      alt: "Gallery image 6"
     }
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 8000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  const [loadedImages, setLoadedImages] = useState<Record<number, boolean>>({});
 
   return (
     <section id="gallery" className="py-20 bg-[#1C1C1C]">
@@ -50,48 +39,43 @@ const Gallery = () => {
         </h2>
         <div className="w-20 h-1 bg-[#C8A448] mx-auto mb-12"></div>
 
-        <div className="relative max-w-4xl mx-auto h-[500px] perspective-1000">
-          <div className="relative w-full h-full transform-style-3d">
-            {images.map((image, index) => {
-              const rotation = (index - currentIndex) * 90;
-              const imageUrl = `/api/static${image.src}`;
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {images.map((image, index) => {
+            const imageUrl = `/api/static${image.src}`;
 
-              return (
-                <div
-                  key={index}
-                  className="absolute inset-0 w-full h-full preserve-3d backface-hidden"
-                  style={{
-                    transform: `rotateY(${rotation}deg) translateZ(400px)`,
-                    transition: "transform 0.8s ease-out",
-                    opacity: Math.abs(rotation % 360) === 0 ? 1 : 0.5
+            return (
+              <div
+                key={index}
+                className="relative overflow-hidden group aspect-square bg-gray-900"
+              >
+                <img
+                  src={imageUrl}
+                  alt={image.alt}
+                  className={`object-cover w-full h-full transform transition-transform duration-500 ${
+                    loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
+                  }`}
+                  loading="lazy"
+                  onLoad={() => {
+                    setLoadedImages(prev => ({ ...prev, [index]: true }));
                   }}
-                >
-                  <img
-                    src={imageUrl}
-                    alt={image.alt}
-                    className="w-full h-full object-cover rounded-lg shadow-2xl"
-                  />
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Navigation Controls */}
-          <button
-            onClick={handlePrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#C8A448] transition-colors z-10"
-            aria-label="Previous image"
-          >
-            <ChevronLeft size={40} />
-          </button>
-          <button
-            onClick={handleNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#C8A448] transition-colors z-10"
-            aria-label="Next image"
-          >
-            <ChevronRight size={40} />
-          </button>
+                  onError={(e) => {
+                    console.error(`Failed to load image:`, imageUrl);
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+                {/* Show loading skeleton while image loads */}
+                {!loadedImages[index] && (
+                  <div className="absolute inset-0 bg-gray-800 animate-pulse" />
+                )}
+                {/* Show hover overlay only after image loads */}
+                {loadedImages[index] && (
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300" />
+                )}
+              </div>
+            );
+          })}
         </div>
+
         {/* Instagram Feed Link */}
         <div className="text-center mt-12">
           <a
