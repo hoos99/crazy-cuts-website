@@ -24,17 +24,17 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-white hover:text-[#C8A448] transition-colors">
+          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
+            <a href="#services" className="text-white hover:text-[#C8A448] transition-colors" aria-label="Services section">
               Services
             </a>
-            <a href="#about" className="text-white hover:text-[#C8A448] transition-colors">
+            <a href="#about" className="text-white hover:text-[#C8A448] transition-colors" aria-label="About section">
               About
             </a>
-            <a href="#gallery" className="text-white hover:text-[#C8A448] transition-colors">
+            <a href="#gallery" className="text-white hover:text-[#C8A448] transition-colors" aria-label="Gallery section">
               Gallery
             </a>
-            <a href="#contact" className="text-white hover:text-[#C8A448] transition-colors">
+            <a href="#contact" className="text-white hover:text-[#C8A448] transition-colors" aria-label="Contact section">
               Contact
             </a>
             <Button 
@@ -57,12 +57,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4">
+          <nav className="md:hidden mt-4 pb-4" role="navigation" aria-label="Main navigation">
             <div className="flex flex-col space-y-4">
               <a
                 href="#services"
                 className="text-white hover:text-[#C8A448] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label="Services section"
               >
                 Services
               </a>
@@ -70,6 +71,7 @@ const Header = () => {
                 href="#about"
                 className="text-white hover:text-[#C8A448] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label="About section"
               >
                 About
               </a>
@@ -77,6 +79,7 @@ const Header = () => {
                 href="#gallery"
                 className="text-white hover:text-[#C8A448] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label="Gallery section"
               >
                 Gallery
               </a>
@@ -84,6 +87,7 @@ const Header = () => {
                 href="#contact"
                 className="text-white hover:text-[#C8A448] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label="Contact section"
               >
                 Contact
               </a>
