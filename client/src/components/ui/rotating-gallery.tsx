@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -6,10 +7,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/barbershop-1.jpg",
-  "/barbershop-2.jpg",
-  "/barbershop-3.jpg",
-  "/barbershop-4.jpg"
+  "/api/static/image_1739733614000.png",
+  "/api/static/image_1739733780046.png",
+  "/api/static/image_1739733815318.png",
+  "/api/static/image_1739733858231.png"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
@@ -18,13 +19,13 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 8000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
 
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
@@ -35,25 +36,37 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
 
   return (
     <div className={`relative w-full max-w-sm mx-auto h-[250px] ${className}`}>
-      <div className="relative w-full h-full perspective-1000">
-        <div className="relative w-full h-full transform-style-3d">
+      <div className="relative w-full h-full [perspective:1000px]">
+        <div 
+          className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-500"
+          style={{
+            transformOrigin: "50% 50% -125px",
+            transform: `translate3d(0, 0, 0) rotateY(${-currentIndex * 90}deg)`
+          }}
+        >
           {images.map((image, index) => {
-            const rotation = (index - currentIndex) * 90;
+            const zTranslate = 125;
+            const xTranslate = zTranslate * Math.sin(index * Math.PI / 2);
+            const zOffset = zTranslate * Math.cos(index * Math.PI / 2);
 
             return (
               <div
-                key={index}
-                className="absolute inset-0 w-full h-full preserve-3d backface-hidden"
+                key={image}
+                className="absolute w-full h-full backface-hidden"
                 style={{
-                  transform: `rotateY(${rotation}deg) translateZ(200px)`,
-                  transition: "transform 0.8s ease-out",
-                  opacity: Math.abs(rotation % 360) === 0 ? 1 : 0.5
+                  transform: `rotateY(${index * 90}deg) translate3d(${xTranslate}px, 0, ${zOffset}px)`,
                 }}
               >
                 <img
                   src={image}
-                  alt={`Barbershop image ${index + 1}`}
-                  className="w-full h-full object-cover rounded-lg shadow-2xl"
+                  alt={`Gallery image ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+                <div 
+                  className="absolute inset-0 bg-black/20"
+                  style={{
+                    opacity: index === currentIndex ? 0 : 0.5
+                  }}
                 />
               </div>
             );
@@ -61,20 +74,19 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
         </div>
       </div>
 
-      {/* Navigation Controls */}
       <button
         onClick={handlePrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#C8A448] transition-colors z-10"
-        aria-label="Previous image"
+        className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
+        aria-label="Previous slide"
       >
-        <ChevronLeft size={40} />
+        <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#C8A448] transition-colors z-10"
-        aria-label="Next image"
+        className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-black/70 transition-colors"
+        aria-label="Next slide"
       >
-        <ChevronRight size={40} />
+        <ChevronRight className="w-6 h-6" />
       </button>
     </div>
   );
