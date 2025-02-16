@@ -17,10 +17,8 @@ const Header = () => {
     <header className="fixed w-full bg-black bg-opacity-95 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center">
-              <img src="/crazy-cuts-logo.png" alt="Crazy Cuts Studio" className="h-10 md:h-12" />
-            </a>
+          <Link href="/" className="flex items-center">
+            <img src="/crazy-cuts-logo.png" alt="Crazy Cuts Studio" className="h-10 md:h-12" />
           </Link>
 
           {/* Desktop Navigation */}
