@@ -4,27 +4,27 @@ import { useState } from "react";
 const Gallery = () => {
   const images = [
     {
-      src: "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+      src: "/static/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
       alt: "Gallery image 1"
     },
     {
-      src: "/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG",
+      src: "/static/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG",
       alt: "Gallery image 2"
     },
     {
-      src: "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+      src: "/static/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
       alt: "Gallery image 3"
     },
     {
-      src: "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+      src: "/static/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
       alt: "Gallery image 4"
     },
     {
-      src: "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+      src: "/static/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
       alt: "Gallery image 5"
     },
     {
-      src: "/f9efee92-d17a-4a01-8231-325e002761c4.JPG",
+      src: "/static/f9efee92-d17a-4a01-8231-325e002761c4.JPG",
       alt: "Gallery image 6"
     }
   ];
@@ -40,40 +40,36 @@ const Gallery = () => {
         <div className="w-20 h-1 bg-[#C8A448] mx-auto mb-12"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((image, index) => {
-            const imageUrl = `${image.src}`;
-
-            return (
-              <div
-                key={index}
-                className="relative overflow-hidden group aspect-square bg-gray-900"
-              >
-                <img
-                  src={imageUrl}
-                  alt={image.alt}
-                  className={`object-cover w-full h-full transform transition-transform duration-500 ${
-                    loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
-                  }`}
-                  loading="lazy"
-                  onLoad={() => {
-                    setLoadedImages(prev => ({ ...prev, [index]: true }));
-                  }}
-                  onError={(e) => {
-                    console.error(`Failed to load image:`, imageUrl);
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-                {/* Show loading skeleton while image loads */}
-                {!loadedImages[index] && (
-                  <div className="absolute inset-0 bg-gray-800 animate-pulse" />
-                )}
-                {/* Show hover overlay only after image loads */}
-                {loadedImages[index] && (
-                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300" />
-                )}
-              </div>
-            );
-          })}
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden group aspect-square bg-gray-900"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className={`object-cover w-full h-full transform transition-transform duration-500 ${
+                  loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
+                }`}
+                loading="lazy"
+                onLoad={() => {
+                  setLoadedImages(prev => ({ ...prev, [index]: true }));
+                }}
+                onError={(e) => {
+                  console.error(`Failed to load image:`, image.src);
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+              {/* Show loading skeleton while image loads */}
+              {!loadedImages[index] && (
+                <div className="absolute inset-0 bg-gray-800 animate-pulse" />
+              )}
+              {/* Show hover overlay only after image loads */}
+              {loadedImages[index] && (
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300" />
+              )}
+            </div>
+          ))}
         </div>
 
         {/* Instagram Feed Link */}
