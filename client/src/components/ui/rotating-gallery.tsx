@@ -6,10 +6,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
-  "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
-  "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
-  "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG"
+  "/api/static/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+  "/api/static/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+  "/api/static/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+  "/api/static/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
