@@ -37,11 +37,6 @@
 
   .hero-heading span {
     display: inline-block;
-    transition: transform 0.3s ease-out;
-  }
-
-  .hero-heading:hover span {
-    transform: rotateY(360deg);
   }
 
   .hero-subheading {
