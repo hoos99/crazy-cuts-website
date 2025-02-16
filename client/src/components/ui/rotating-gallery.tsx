@@ -6,10 +6,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/Screenshot 2025-02-16 211934.png",
-  "/Screenshot 2025-02-16 212255.png",
-  "/Screenshot 2025-02-16 212330.png",
-  "/Screenshot 2025-02-16 212410.png"
+  "/image_1739733858231.png",
+  "/image_1739733815318.png",
+  "/image_1739733780046.png",
+  "/image_1739733614000.png"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
