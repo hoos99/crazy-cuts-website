@@ -40,31 +40,42 @@ const Gallery = () => {
         <div className="w-20 h-1 bg-[#C8A448] mx-auto mb-12"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden group aspect-square bg-gray-900"
-            >
-              <img
-                src={window.location.origin + image.src}
-                alt={image.alt}
-                className={`object-cover w-full h-full transform transition-transform duration-500 ${
-                  loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
-                }`}
-                loading="lazy"
-                onLoad={() => {
-                  setLoadedImages(prev => ({ ...prev, [index]: true }));
-                }}
-                onError={(e) => {
-                  console.error(`Failed to load image: ${image.src}`);
-                  e.currentTarget.style.display = 'none';
-                }}
-              />
-              {loadedImages[index] && (
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300" />
-              )}
-            </div>
-          ))}
+          {images.map((image, index) => {
+            const imageUrl = `${window.location.origin}${image.src}`;
+            console.log('Loading image:', imageUrl); // Debug log
+
+            return (
+              <div
+                key={index}
+                className="relative overflow-hidden group aspect-square bg-gray-900"
+              >
+                <img
+                  src={imageUrl}
+                  alt={image.alt}
+                  className={`object-cover w-full h-full transform transition-transform duration-500 ${
+                    loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
+                  }`}
+                  loading="lazy"
+                  onLoad={() => {
+                    console.log('Image loaded successfully:', imageUrl); // Debug log
+                    setLoadedImages(prev => ({ ...prev, [index]: true }));
+                  }}
+                  onError={(e) => {
+                    console.error(`Failed to load image:`, imageUrl);
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+                {/* Show loading skeleton while image loads */}
+                {!loadedImages[index] && (
+                  <div className="absolute inset-0 bg-gray-800 animate-pulse" />
+                )}
+                {/* Show hover overlay only after image loads */}
+                {loadedImages[index] && (
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300" />
+                )}
+              </div>
+            );
+          })}
         </div>
 
         {/* Instagram Feed Link */}
