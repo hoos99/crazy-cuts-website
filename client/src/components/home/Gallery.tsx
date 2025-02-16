@@ -2,12 +2,12 @@ import { CONTACT_INFO } from "@/lib/constants";
 
 const Gallery = () => {
   const images = [
-    "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
-    "https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
-    "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
-    "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
-    "/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
+    "/images/gallery/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+    "/images/tools.jpg",
+    "/images/gallery/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+    "/images/gallery/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+    "/images/gallery/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+    "/images/gallery/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
   ];
 
   return (
@@ -28,6 +28,7 @@ const Gallery = () => {
                 src={image}
                 alt={`Gallery image ${index + 1}`}
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300"></div>
             </div>
