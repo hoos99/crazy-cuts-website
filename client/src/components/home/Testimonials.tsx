@@ -4,18 +4,18 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "James Wilson",
-    text: "The attention to detail and precision in every cut is remarkable. Best grooming experience I've had.",
+    name: "Tusshar Das",
+    text: "Hands down the best cut I've ever had! The vibe is lekker, the service is top-notch, and the attention to detail is unreal. Whether it's a fade or a classic cut, these gents know their craft. Definitely my go-to spot!",
     rating: 5
   },
   {
-    name: "Michael Chen",
-    text: "Luxury barbering at its finest. The hot towel service is exceptional and worth every penny.",
+    name: "Hoos",
+    text: "Jeeno is a legend, but let me tell you, Minhaz is just as sharp! Gave me a fresh fade with his own spin, and now I know I can trust either of them. No more waiting in long lines—quality cuts all round!",
     rating: 5
   },
   {
-    name: "Robert Thompson",
-    text: "Found my go-to barbershop. The atmosphere is sophisticated and the service is impeccable.",
+    name: "Jamz Khan",
+    text: "That hot towel shave? Yoh, next level! Left me feeling fresh and looking sharp. The service is worth every cent, and the team makes you feel right at home. Crazy Cuts is the only place I trust!",
     rating: 5
   }
 ];
