@@ -34,12 +34,12 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
   };
 
   return (
-    <div className={`relative w-full max-w-md mx-auto h-[400px] ${className}`}>
+    <div className={`relative w-full max-w-md mx-auto h-[300px] ${className}`}>
       <div className="relative w-full h-full perspective-1000">
         <div className="relative w-full h-full transform-style-3d">
           {images.map((image, index) => {
             const rotation = (index - currentIndex) * 90;
-            
+
             return (
               <div
                 key={index}
