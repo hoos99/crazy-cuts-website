@@ -43,10 +43,7 @@ const Hero = () => {
           Step In for the Legendary JEENO FADE—Where Mastery Meets Style
         </p>
 
-        {/* Testing LoadingSpinner */}
-        <div className="flex justify-center mb-8">
-          <LoadingSpinner size="lg" />
-        </div>
+        
 
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <Button
