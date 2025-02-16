@@ -34,14 +34,11 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
   };
 
   return (
-    <div className={`relative w-full max-w-xs mx-auto h-[300px] ${className}`}> {/*Reduced dimensions*/}
-      {/* Reduced perspective depth */}
+    <div className={`relative w-full max-w-xs mx-auto h-[300px] ${className}`}>
       <div className="absolute inset-0 [perspective:800px]">
-        {/* Smoothed transitions */}
         <div 
           className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-700 ease-in-out"
           style={{
-            /* Reduced translateZ */
             transform: `translateZ(-150px) rotateY(${-currentIndex * 90}deg)`
           }}
         >
@@ -62,8 +59,8 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
                   alt={`Professional barbershop image ${index + 1}`}
                   className="w-full h-full object-cover rounded-lg"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40 rounded-lg" /> {/*Updated gradient*/}
-                <div className="absolute inset-0 shadow-[0_0_10px_rgba(0,0,0,0.2)] rounded-lg" /> {/*Reduced shadow*/}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40 rounded-lg" />
+                <div className="absolute inset-0 shadow-[0_0_10px_rgba(0,0,0,0.2)] rounded-lg" />
               </div>
             );
           })}
@@ -72,17 +69,17 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
 
       <button
         onClick={handlePrevious}
-        className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-black/30 text-white rounded-full hover:bg-black/50 transition-colors z-10" {/*Smaller and subtle buttons*/}
+        className="absolute left-2 top-1/2 -translate-y-1/2 p-1 bg-black/30 text-white rounded-full hover:bg-black/50 transition-colors z-10"
         aria-label="Previous slide"
       >
-        <ChevronLeft className="w-4 h-4" /> {/*Smaller icon*/}
+        <ChevronLeft className="w-4 h-4" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-black/30 text-white rounded-full hover:bg-black/50 transition-colors z-10" {/*Smaller and subtle buttons*/}
+        className="absolute right-2 top-1/2 -translate-y-1/2 p-1 bg-black/30 text-white rounded-full hover:bg-black/50 transition-colors z-10"
         aria-label="Next slide"
       >
-        <ChevronRight className="w-4 h-4" /> {/*Smaller icon*/}
+        <ChevronRight className="w-4 h-4" />
       </button>
     </div>
   );
