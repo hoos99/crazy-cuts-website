@@ -17,27 +17,9 @@ export const LoadingSpinner = ({
 
   return (
     <div className={cn("relative", sizeClasses[size], className)}>
-      {/* Barber Pole Background */}
-      <svg
-        className="animate-spin-slow absolute inset-0"
-        viewBox="0 0 50 50"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          cx="25"
-          cy="25"
-          r="20"
-          fill="none"
-          stroke="#C8A448"
-          strokeWidth="4"
-          strokeDasharray="10,5"
-          className="animate-dash"
-        />
-      </svg>
-      
       {/* Rotating Scissors */}
       <svg
-        className="animate-spin absolute inset-0"
+        className="animate-spin-slow absolute inset-0"
         viewBox="0 0 50 50"
         xmlns="http://www.w3.org/2000/svg"
       >
