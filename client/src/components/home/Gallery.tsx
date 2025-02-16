@@ -24,8 +24,8 @@ const Gallery = () => {
       alt: "Contemporary barbering techniques at Crazy Cuts Studio"
     },
     {
-      src: "/static/barber-precision-cut.jpg",
-      alt: "Barber performing precision haircut with traditional barber cape at Crazy Cuts Studio"
+      src: "/static/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+      alt: "Professional hair styling at Crazy Cuts Studio Mayfair"
     }
   ];
 
