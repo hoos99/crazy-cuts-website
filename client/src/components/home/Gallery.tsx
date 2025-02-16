@@ -3,12 +3,30 @@ import { useState } from "react";
 
 const Gallery = () => {
   const images = [
-    "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
-    "/IMG_7674.JPG",
-    "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
-    "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
-    "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
-    "/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
+    {
+      src: "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+      alt: "Gallery image 1"
+    },
+    {
+      src: "/IMG_7674.JPG",
+      alt: "Gallery image 2"
+    },
+    {
+      src: "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+      alt: "Gallery image 3"
+    },
+    {
+      src: "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+      alt: "Gallery image 4"
+    },
+    {
+      src: "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+      alt: "Gallery image 5"
+    },
+    {
+      src: "/f9efee92-d17a-4a01-8231-325e002761c4.JPG",
+      alt: "Gallery image 6"
+    }
   ];
 
   const [loadedImages, setLoadedImages] = useState<Record<number, boolean>>({});
@@ -28,8 +46,8 @@ const Gallery = () => {
               className="relative overflow-hidden group aspect-square bg-gray-900"
             >
               <img
-                src={image}
-                alt={`Gallery image ${index + 1}`}
+                src={window.location.origin + image.src}
+                alt={image.alt}
                 className={`object-cover w-full h-full transform transition-transform duration-500 ${
                   loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
                 }`}
@@ -38,7 +56,7 @@ const Gallery = () => {
                   setLoadedImages(prev => ({ ...prev, [index]: true }));
                 }}
                 onError={(e) => {
-                  console.error(`Failed to load image: ${image}`);
+                  console.error(`Failed to load image: ${image.src}`);
                   e.currentTarget.style.display = 'none';
                 }}
               />
