@@ -24,8 +24,8 @@ const Gallery = () => {
       alt: "Contemporary barbering techniques at Crazy Cuts Studio"
     },
     {
-      src: "/static/IMG_7674.JPG",
-      alt: "Professional hair styling and grooming services in Mayfair"
+      src: "/api/static/barber-precision-cut.jpg",
+      alt: "Barber performing precision haircut with traditional barber cape at Crazy Cuts Studio"
     }
   ];
 
