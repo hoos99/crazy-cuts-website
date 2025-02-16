@@ -6,10 +6,10 @@ interface RotatingGalleryProps {
 }
 
 const images = [
-  "/image_1739733858231.png",
-  "/image_1739733815318.png",
-  "/image_1739733780046.png",
-  "/image_1739733614000.png"
+  "/static/Screenshot 2025-02-16 211934.png",
+  "/static/Screenshot 2025-02-16 212255.png",
+  "/static/Screenshot 2025-02-16 212330.png",
+  "/static/Screenshot 2025-02-16 212410.png"
 ];
 
 export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
@@ -56,7 +56,7 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
               >
                 <img
                   src={image}
-                  alt={`Rotating gallery image ${index + 1}`}
+                  alt={`Professional barbershop image ${index + 1}`}
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 rounded-lg" />
