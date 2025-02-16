@@ -73,6 +73,9 @@ export default {
         },
         spin: {
           to: { transform: 'rotate(360deg)' }
+        },
+        "spin-y": {
+          to: { transform: 'rotateY(360deg)' }
         }
       },
       animation: {
@@ -80,6 +83,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "spin-slow": "spin 5s linear infinite",
         "spin": "spin 1s linear infinite",
+        "spin-y-slow": "spin-y 20s linear infinite",
       },
     },
   },
