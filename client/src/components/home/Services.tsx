@@ -32,10 +32,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="font-oswald text-3xl md:text-4xl text-white mb-4 font-bold">
-            SERVICES
+            The Legendary Fade Experience | Sharp Cuts & Grooming
           </h2>
           <p className="text-[#C8A448] text-sm uppercase tracking-wider mb-4 font-bold">
-            LISTENING AND PRECISION
+            WHY CHOOSE US
           </p>
           <div className="w-20 h-1 bg-[#C8A448] mx-auto"></div>
         </div>
