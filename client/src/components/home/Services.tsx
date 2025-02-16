@@ -7,7 +7,7 @@ const Services = () => {
   const services = [
     {
       name: "HAIRDRESSING",
-      description: "Discover the Legendary <span className="text-[#FF0000] animate-glow-pulse-red">JEENO FADE</span>, cover greys or refresh your color, or opt for a classic trim—perfect for men and children of all ages.",
+      description: `Discover the Legendary <span className="text-[#FF0000] animate-glow-pulse-red">JEENO FADE</span>, cover greys or refresh your color, or opt for a classic trim—perfect for men and children of all ages.`,
       icon: Scissors
     },
     {
