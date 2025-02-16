@@ -17,16 +17,22 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-4">
-        <img src="/logo.svg" alt="Crazy Cuts Studio" className="w-48 md:w-64 mx-auto mb-8 animate-fade-in" />
-        
+        <div className="w-48 md:w-64 mx-auto mb-8 animate-fade-in">
+          <img 
+            src="/crazy-cuts-logo.png" 
+            alt="Crazy Cuts Studio" 
+            className="w-full h-auto drop-shadow-lg"
+          />
+        </div>
+
         <h1 className="font-oswald text-4xl md:text-6xl text-white mb-6 tracking-wider">
           Precision Cuts. Timeless Style.
         </h1>
-        
+
         <p className="font-lora text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
           Experience luxury grooming at its finest. Where tradition meets modern style.
         </p>
-        
+
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <Button
             size="lg"
