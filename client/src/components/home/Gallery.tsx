@@ -2,12 +2,12 @@ import { CONTACT_INFO } from "@/lib/constants";
 
 const Gallery = () => {
   const images = [
-    "/images/gallery/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
-    "/images/tools.jpg",
-    "/images/gallery/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
-    "/images/gallery/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
-    "/images/gallery/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
-    "/images/gallery/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
+    "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
+    "/IMG_7674.JPG",
+    "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+    "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+    "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+    "/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
   ];
 
   return (

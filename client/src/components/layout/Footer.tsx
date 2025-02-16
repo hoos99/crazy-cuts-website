@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Logo and Social */}
           <div className="flex flex-col items-center md:items-start">
             <img 
-              src="/images/logo.png" 
+              src="/crazy-cuts-logo.png" 
               alt="Crazy Cuts Studio" 
               className="h-16 mb-6 object-contain" 
             />
