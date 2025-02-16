@@ -19,13 +19,15 @@ const About = () => {
               </h3>
               <div className="font-lora text-gray-300 space-y-4 font-medium">
                 <p>
-                  Founded on the principles of excellence and precision, Crazy Cuts Studio
-                  has been delivering exceptional grooming experiences since its inception.
+                  Founded on the principles of excellence, precision, and style, Crazy Cuts Studio
+                  has been the go-to barbershop in Mayfair, Johannesburg for expert fades,
+                  sharp cuts, and premium grooming.
                 </p>
                 <p>
-                  Our commitment to craftsmanship and attention to detail has made us
-                  the preferred choice for those who demand the very best in men's
-                  grooming.
+                  With a deep commitment to craftsmanship and attention to detail, we have
+                  earned a reputation as the top choice for men's grooming, beard styling,
+                  and classic haircuts. Whether you're after a signature fade, a clean shave,
+                  or a full grooming experience, our skilled barbers deliver next-level results.
                 </p>
               </div>
             </div>
