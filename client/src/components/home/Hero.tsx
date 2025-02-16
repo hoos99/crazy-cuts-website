@@ -28,7 +28,7 @@ const Hero = () => {
           <img 
             src="/crazy-cuts-logo.png" 
             alt="Crazy Cuts Studio" 
-            className="hero-logo mx-auto animate-spin-very-slow"
+            className="hero-logo mx-auto"
           />
         </div>
 
