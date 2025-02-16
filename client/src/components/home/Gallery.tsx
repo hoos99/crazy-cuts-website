@@ -7,7 +7,7 @@ const Gallery = () => {
     "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
     "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
     "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
-    "/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG"
+    "/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
   ];
 
   return (
