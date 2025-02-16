@@ -54,7 +54,7 @@ export const CONTACT_INFO = {
   address: "95, 6th Avenue Mayfair, JHB",
   social: {
     instagram: "https://instagram.com/crazycutstudio",
-    facebook: "https://facebook.com/crazycutstudio",
+    facebook: "https://www.facebook.com/Crazycutsstudio",
     whatsapp: "+27815683089"
   }
 };

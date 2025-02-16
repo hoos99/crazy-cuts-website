@@ -31,6 +31,6 @@
   }
 
   .hero-logo {
-    @apply w-48 md:w-80 h-auto drop-shadow-lg;
+    @apply w-64 md:w-96 h-auto drop-shadow-lg;
   }
 }
