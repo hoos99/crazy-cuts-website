@@ -35,18 +35,20 @@ export const BUSINESS_HOURS = [
   { day: "Sunday", hours: "9:00 AM - 7:00 PM" }
 ];
 
+import React from 'react';
+
 export const TEAM_MEMBERS = [
   {
     name: "Jeeno",
     role: "Founder & Lead Stylist",
     title: "Master Barber",
-    description: <>Known for creating the Legendary <span className="text-[#FF0000] animate-pulse">JEENO FADE</span>—a style so sought-after, you might catch a queue just waiting for his magic. But if you see a line, fret not—his protégé has you covered.</>
+    description: `Known for creating the Legendary JEENO FADE—a style so sought-after, you might catch a queue just waiting for his magic. But if you see a line, fret not—his protégé has you covered.`
   },
   {
     name: "Minhaz",
     role: "Style Expert & Jeeno's Protégé",
     title: "Senior Barber",
-    description: <>Trained directly by Jeeno, Minhaz delivers a variation of the iconic <span className="text-[#FF0000] animate-pulse">JEENO FADE</span> with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required.</>
+    description: `Trained directly by Jeeno, Minhaz delivers a variation of the iconic JEENO FADE with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required.`
   },
   {
     name: "Madhvi",
