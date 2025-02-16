@@ -66,7 +66,7 @@
   }
 
   .animate-spin-slow {
-    animation: spin 5s linear infinite;
+    animation: spin 30s linear infinite;
   }
 
   .perspective-1000 {

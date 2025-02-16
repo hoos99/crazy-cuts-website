@@ -24,15 +24,14 @@ export const LoadingSpinner = ({
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M30 15 L20 35 M20 15 L30 35"
+          d="M10 10 L40 40 M40 10 L10 40"
           stroke="white"
           strokeWidth="3"
           strokeLinecap="round"
         />
-        <circle cx="20" cy="15" r="3" fill="white" />
-        <circle cx="30" cy="15" r="3" fill="white" />
-        <circle cx="20" cy="35" r="3" fill="white" />
-        <circle cx="30" cy="35" r="3" fill="white" />
+        <path d="M10 10 L10 40" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+        <path d="M40 10 L40 40" stroke="white" strokeWidth="3" strokeLinecap="round"/>
+
       </svg>
     </div>
   );
