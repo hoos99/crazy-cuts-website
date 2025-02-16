@@ -32,7 +32,10 @@ const Hero = () => {
         </div>
 
         <h1 className="hero-heading text-white mb-6 tracking-wider">
-          Precision Cuts. Timeless Style.
+          <span>Precision</span>{' '}
+          <span>Cuts.</span>{' '}
+          <span>Timeless</span>{' '}
+          <span>Style.</span>
         </h1>
 
         <p className="hero-subheading text-[#C8A448] mb-8 max-w-2xl mx-auto">
