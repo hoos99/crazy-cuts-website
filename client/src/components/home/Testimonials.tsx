@@ -28,7 +28,7 @@ const Testimonials = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 8000); // Changed from 5000 to 8000 for slower rotation
 
     return () => clearInterval(interval);
   }, []);
