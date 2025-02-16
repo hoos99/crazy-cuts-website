@@ -35,15 +35,6 @@
     text-transform: uppercase;
   }
 
-  .hero-heading span {
-    display: inline-block;
-    transition: transform 0.3s ease-out;
-  }
-
-  .hero-heading:hover span {
-    transform: rotateY(360deg);
-  }
-
   .hero-subheading {
     font-family: 'Phoenix', sans-serif;
     @apply text-xl md:text-2xl font-bold;
@@ -66,6 +57,22 @@
   }
 
   .animate-spin-slow {
-    animation: spin 3s linear infinite;
+    animation: spin 5s linear infinite;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
   }
 }

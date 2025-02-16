@@ -31,10 +31,10 @@ const Services = () => {
     <section id="services" className="py-20 bg-[#1C1C1C]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="font-oswald text-3xl md:text-4xl text-white mb-4">
+          <h2 className="font-oswald text-3xl md:text-4xl text-white mb-4 font-bold">
             SERVICES
           </h2>
-          <p className="text-[#C8A448] text-sm uppercase tracking-wider mb-4">
+          <p className="text-[#C8A448] text-sm uppercase tracking-wider mb-4 font-bold">
             LISTENING AND PRECISION
           </p>
           <div className="w-20 h-1 bg-[#C8A448] mx-auto"></div>
@@ -50,12 +50,12 @@ const Services = () => {
                 <div className="mx-auto mb-4 w-12 h-12 flex items-center justify-center">
                   <service.icon className="w-8 h-8 text-[#C8A448]" />
                 </div>
-                <h3 className="font-montserrat text-xl text-white">
+                <h3 className="font-montserrat text-xl text-white font-bold">
                   {service.name}
                 </h3>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-400 text-center text-sm">
+                <p className="text-gray-400 text-center text-sm font-medium">
                   {service.description}
                 </p>
               </CardContent>
