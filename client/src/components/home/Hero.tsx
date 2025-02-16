@@ -32,7 +32,7 @@ const Hero = () => {
           />
         </div>
 
-        <h1 className="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-6 tracking-wider">
+        <h1 className="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-6 tracking-wider animate-fade-in">
           <span>Precision</span>{' '}
           <span>Cuts.</span>{' '}
           <span>Timeless</span>{' '}
