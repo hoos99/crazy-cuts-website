@@ -1,29 +1,29 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Scissors } from "lucide-react";
-import { FaUserNinja, FaUserAlt } from "react-icons/fa";
-import { GiRazor } from "react-icons/gi";
+import { FaFemale } from "react-icons/fa";
+import { GiRazor, GiHealthNormal } from "react-icons/gi";
 
 const Services = () => {
   const services = [
     {
       name: "HAIRDRESSING",
-      description: "Clippers or scissors for men, women and children",
+      description: "Discover the Legendary Jeeno Fade, cover greys or refresh your color, or opt for a classic trim—perfect for men and children of all ages.",
       icon: Scissors
     },
     {
-      name: "SHAVING",
-      description: "Full shave or traditional head shave",
+      name: "SHAVING & GROOMING",
+      description: "From classic shaves and modern steam treatments to quick waxing solutions for a polished look—ideal for men who value impeccable style.",
       icon: GiRazor
     },
     {
-      name: "BEARD",
-      description: "Beard fade with clippers, beard outline or sculpted beard trimmed",
-      icon: FaUserAlt
+      name: "SCRUBS & FACIALS",
+      description: "From a quick scrub to a luxurious facial—or even a soothing head massage—treat yourself to the perfect rejuvenation for mind and skin.",
+      icon: GiHealthNormal
     },
     {
-      name: "MUSTACHE",
-      description: "Cutting and carving",
-      icon: FaUserNinja
+      name: "LADIES' WAX & THREAD",
+      description: "Perfectly shaped brows, a smooth upper lip—enhance your natural beauty with gentle, precise treatments.",
+      icon: FaFemale
     }
   ];
 
