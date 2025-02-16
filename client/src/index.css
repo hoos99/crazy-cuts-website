@@ -1,11 +1,9 @@
-
 @font-face {
   font-family: 'Composer JNL';
   src: url('/fonts/composer-jnl.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
-
 
 @tailwind base;
 @tailwind components;
@@ -31,9 +29,10 @@
 @layer components {
   .hero-heading {
     font-family: 'Composer JNL', sans-serif;
-    @apply text-4xl md:text-6xl relative;
+    @apply text-5xl md:text-7xl relative font-bold;
     perspective: 1000px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
   }
 
   .hero-heading span {
