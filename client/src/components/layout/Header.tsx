@@ -23,13 +23,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Main navigation">
-            <a href="#services" className="text-white hover:text-[#C8A448] transition-colors" aria-label="Services section">
+            <a href="#services" className="text-[#FF0000] hover:text-[#C8A448] transition-colors" aria-label="Services section">
               Services
             </a>
             <a href="#about" className="text-white hover:text-[#C8A448] transition-colors" aria-label="About section">
               About
             </a>
-            <a href="#gallery" className="text-white hover:text-[#C8A448] transition-colors" aria-label="Gallery section">
+            <a href="#gallery" className="text-[#FF0000] hover:text-[#C8A448] transition-colors" aria-label="Gallery section">
               Gallery
             </a>
             <a href="#contact" className="text-white hover:text-[#C8A448] transition-colors" aria-label="Contact section">
