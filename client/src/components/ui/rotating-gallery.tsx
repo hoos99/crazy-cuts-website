@@ -45,7 +45,7 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
                 key={index}
                 className="absolute inset-0 w-full h-full preserve-3d backface-hidden"
                 style={{
-                  transform: `rotateY(${rotation}deg) translateZ(300px)`,
+                  transform: `rotateY(${rotation}deg) translateZ(200px)`,
                   transition: "transform 0.8s ease-out",
                   opacity: Math.abs(rotation % 360) === 0 ? 1 : 0.5
                 }}

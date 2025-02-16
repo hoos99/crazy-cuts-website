@@ -31,7 +31,9 @@ const About = () => {
             </div>
 
             {/* Rotating Gallery */}
-            <RotatingGallery className="mt-8" />
+            <div className="mt-4 mb-8">
+              <RotatingGallery />
+            </div>
           </div>
 
           {/* Team */}
