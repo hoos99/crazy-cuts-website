@@ -39,12 +39,14 @@ const About = () => {
                   key={member.name}
                   className="bg-[#1C1C1C] p-6 rounded-lg border border-[#C8A448]"
                 >
-                  <h4 className="font-oswald text-xl text-white mb-2">
-                    {member.name}
-                  </h4>
-                  <p className="text-[#C8A448] mb-2">{member.role}</p>
-                  <p className="text-gray-400 text-sm">
-                    Specialty: {member.specialty}
+                  <div className="mb-4">
+                    <h4 className="font-oswald text-xl text-white">
+                      {member.title}: {member.name}
+                    </h4>
+                    <p className="text-[#C8A448] mb-2">{member.role}</p>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed">
+                    {member.description}
                   </p>
                 </div>
               ))}

@@ -37,14 +37,16 @@ export const BUSINESS_HOURS = [
 
 export const TEAM_MEMBERS = [
   {
-    name: "Master Barber",
+    name: "Jeeno",
     role: "Founder & Lead Stylist",
-    specialty: "Classic Cuts & Hot Towel Shaves"
+    title: "Master Barber",
+    description: "Known for creating the Legendary Jeeno Fade—a style so sought-after, you might catch a queue just waiting for his magic. But if you see a line, fret not—his protégé has you covered."
   },
   {
-    name: "Style Expert",
-    role: "Senior Barber",
-    specialty: "Modern Styles & Beard Design"
+    name: "Minhaz",
+    role: "Style Expert & Jeeno's Protégé",
+    title: "Senior Barber",
+    description: "Trained directly by Jeeno, Minhaz delivers a variation of the iconic Jeeno Fade with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required."
   }
 ];
 
