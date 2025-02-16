@@ -37,14 +37,27 @@
     text-transform: uppercase;
   }
 
-  .hero-heading span {
-    display: inline-block;
-    transition: transform 0.3s ease-out;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .hero-heading:hover span {
-    transform: rotateY(360deg);
+  .animate-fade-in span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
   }
+
+  .animate-fade-in span:nth-child(1) { animation-delay: 0.1s; }
+  .animate-fade-in span:nth-child(2) { animation-delay: 0.3s; }
+  .animate-fade-in span:nth-child(3) { animation-delay: 0.5s; }
+  .animate-fade-in span:nth-child(4) { animation-delay: 0.7s; }
 
   .hero-subheading {
     font-family: 'Phoenix', sans-serif;
