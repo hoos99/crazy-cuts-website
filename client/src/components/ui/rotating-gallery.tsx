@@ -56,7 +56,7 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
               >
                 <img
                   src={image}
-                  alt={`Professional barbershop image ${index + 1}`}
+                  alt={`Rotating gallery image ${index + 1}`}
                   className="w-full h-full object-cover rounded-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/60 rounded-lg" />
