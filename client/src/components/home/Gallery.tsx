@@ -1,12 +1,13 @@
+import { CONTACT_INFO } from "@/lib/constants";
+
 const Gallery = () => {
-  // Sample gallery images - replace with actual content
   const images = [
-    "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "/6e6102a2-2c66-4ae6-844b-766dc7abef7e.JPG",
     "https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1622296089106-d9a6d6030ab7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG",
+    "/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+    "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+    "/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG"
   ];
 
   return (
@@ -36,7 +37,7 @@ const Gallery = () => {
         {/* Instagram Feed Link */}
         <div className="text-center mt-12">
           <a
-            href="https://instagram.com/crazycutsstudio"
+            href={CONTACT_INFO.social.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-[#C8A448] hover:text-white transition-colors"

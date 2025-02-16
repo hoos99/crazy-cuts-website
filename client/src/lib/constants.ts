@@ -53,7 +53,8 @@ export const CONTACT_INFO = {
   email: "jenish10491@icloud.com",
   address: "95, 6th Avenue Mayfair, JHB",
   social: {
-    instagram: "https://instagram.com/crazycutsstudio",
-    facebook: "https://facebook.com/crazycutsstudio"
+    instagram: "https://instagram.com/crazycutstudio",
+    facebook: "https://facebook.com/crazycutstudio",
+    whatsapp: "+27815683089"
   }
 };

@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Phoenix';
+  src: url('/fonts/phoenix.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -9,5 +16,21 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .hero-heading {
+    font-family: 'Phoenix', sans-serif;
+    @apply text-4xl md:text-6xl font-bold;
+  }
+
+  .hero-subheading {
+    font-family: 'Phoenix', sans-serif;
+    @apply text-xl md:text-2xl font-bold;
+  }
+
+  .hero-logo {
+    @apply w-48 md:w-80 h-auto drop-shadow-lg;
   }
 }

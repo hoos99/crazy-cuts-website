@@ -1,7 +1,13 @@
-import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { CONTACT_INFO, BUSINESS_HOURS } from "@/lib/constants";
 
 const Footer = () => {
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent("Hi, I would like to book an appointment for a haircut.");
+    const whatsappUrl = `https://wa.me/${CONTACT_INFO.social.whatsapp.replace(/[^0-9]/g, '')}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <footer className="bg-[#1C1C1C] text-white py-12">
       <div className="container mx-auto px-4">
@@ -26,6 +32,12 @@ const Footer = () => {
               >
                 <FaFacebookF size={24} />
               </a>
+              <button
+                onClick={handleWhatsApp}
+                className="text-[#C8A448] hover:text-white transition-colors"
+              >
+                <FaWhatsapp size={24} />
+              </button>
             </div>
           </div>
 

@@ -23,19 +23,19 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-20 text-center px-4">
-        <div className="w-48 md:w-64 mx-auto mb-8 animate-fade-in">
+        <div className="mx-auto mb-8 animate-fade-in">
           <img 
             src="/crazy-cuts-logo.png" 
             alt="Crazy Cuts Studio" 
-            className="w-full h-auto drop-shadow-lg"
+            className="hero-logo mx-auto"
           />
         </div>
 
-        <h1 className="font-oswald text-4xl md:text-6xl text-white mb-6 tracking-wider">
+        <h1 className="hero-heading text-white mb-6 tracking-wider">
           Precision Cuts. Timeless Style.
         </h1>
 
-        <p className="font-lora text-xl md:text-2xl text-[#C8A448] mb-8 max-w-2xl mx-auto">
+        <p className="hero-subheading text-[#C8A448] mb-8 max-w-2xl mx-auto">
           Step In for the Legendary JEENO FADE—Where Mastery Meets Style
         </p>
 
