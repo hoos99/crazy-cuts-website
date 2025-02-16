@@ -29,6 +29,10 @@ const Gallery = () => {
                 alt={`Gallery image ${index + 1}`}
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
+                onError={(e) => {
+                  console.error(`Failed to load image: ${image}`);
+                  e.currentTarget.style.display = 'none';
+                }}
               />
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300"></div>
             </div>
