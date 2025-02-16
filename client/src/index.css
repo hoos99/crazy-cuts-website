@@ -53,3 +53,19 @@
     @apply w-64 md:w-96 h-auto drop-shadow-lg;
   }
 }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 30;
+  }
+}
+
+@layer utilities {
+  .animate-dash {
+    animation: dash 1.5s linear infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+}
