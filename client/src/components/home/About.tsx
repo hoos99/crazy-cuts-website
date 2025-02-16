@@ -1,4 +1,5 @@
 import { TEAM_MEMBERS } from "@/lib/constants";
+import { RotatingGallery } from "@/components/ui/rotating-gallery";
 
 const About = () => {
   return (
@@ -11,21 +12,26 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Story */}
-          <div>
-            <h3 className="font-montserrat text-2xl text-[#C8A448] mb-6 font-bold">
-              Our Story
-            </h3>
-            <div className="font-lora text-gray-300 space-y-4 font-medium">
-              <p>
-                Founded on the principles of excellence and precision, Crazy Cuts Studio
-                has been delivering exceptional grooming experiences since its inception.
-              </p>
-              <p>
-                Our commitment to craftsmanship and attention to detail has made us
-                the preferred choice for those who demand the very best in men's
-                grooming.
-              </p>
+          <div className="space-y-8">
+            <div>
+              <h3 className="font-montserrat text-2xl text-[#C8A448] mb-6 font-bold">
+                Our Story
+              </h3>
+              <div className="font-lora text-gray-300 space-y-4 font-medium">
+                <p>
+                  Founded on the principles of excellence and precision, Crazy Cuts Studio
+                  has been delivering exceptional grooming experiences since its inception.
+                </p>
+                <p>
+                  Our commitment to craftsmanship and attention to detail has made us
+                  the preferred choice for those who demand the very best in men's
+                  grooming.
+                </p>
+              </div>
             </div>
+
+            {/* Rotating Gallery */}
+            <RotatingGallery className="mt-8" />
           </div>
 
           {/* Team */}
