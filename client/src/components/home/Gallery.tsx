@@ -1,4 +1,5 @@
 import { CONTACT_INFO } from "@/lib/constants";
+import { useState } from "react";
 
 const Gallery = () => {
   const images = [
@@ -9,6 +10,8 @@ const Gallery = () => {
     "/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
     "/f9efee92-d17a-4a01-8231-325e002761c4.JPG"
   ];
+
+  const [loadedImages, setLoadedImages] = useState<Record<number, boolean>>({});
 
   return (
     <section id="gallery" className="py-20 bg-[#1C1C1C]">
@@ -22,19 +25,26 @@ const Gallery = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative overflow-hidden group aspect-square"
+              className="relative overflow-hidden group aspect-square bg-gray-900"
             >
               <img
                 src={image}
                 alt={`Gallery image ${index + 1}`}
-                className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                className={`object-cover w-full h-full transform transition-transform duration-500 ${
+                  loadedImages[index] ? 'group-hover:scale-110' : 'opacity-0'
+                }`}
                 loading="lazy"
+                onLoad={() => {
+                  setLoadedImages(prev => ({ ...prev, [index]: true }));
+                }}
                 onError={(e) => {
                   console.error(`Failed to load image: ${image}`);
                   e.currentTarget.style.display = 'none';
                 }}
               />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300"></div>
+              {loadedImages[index] && (
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300" />
+              )}
             </div>
           ))}
         </div>
