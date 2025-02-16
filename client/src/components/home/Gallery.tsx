@@ -4,27 +4,27 @@ import { useState } from "react";
 const Gallery = () => {
   const images = [
     {
-      src: "/api/static/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG",
+      src: "/static/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG",
       alt: "Premium fade haircut by expert barber at Crazy Cuts Studio Mayfair"
     },
     {
-      src: "/api/static/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG", 
+      src: "/static/69b5290b-543b-4fa5-8db6-fd06a02cbe6d.JPG", 
       alt: "Professional beard grooming and styling at Johannesburg's top barbershop"
     },
     {
-      src: "/api/static/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
+      src: "/static/a0c49655-1c3f-4a9c-805a-60e64b0b5080.JPG",
       alt: "Signature fade cut being performed at Crazy Cuts Studio Mayfair"
     },
     {
-      src: "/api/static/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
+      src: "/static/e93e4c38-5381-4b77-af7a-f1c36f26794a.JPG",
       alt: "Expert barber delivering precision haircut in Johannesburg"
     },
     {
-      src: "/api/static/f9efee92-d17a-4a01-8231-325e002761c4.JPG",
+      src: "/static/f9efee92-d17a-4a01-8231-325e002761c4.JPG",
       alt: "Contemporary barbering techniques at Crazy Cuts Studio"
     },
     {
-      src: "/api/static/IMG_7674.JPG",
+      src: "/static/IMG_7674.JPG",
       alt: "Professional hair styling and grooming services in Mayfair"
     }
   ];
