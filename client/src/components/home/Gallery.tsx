@@ -8,7 +8,7 @@ const Gallery = () => {
       alt: "Gallery image 1"
     },
     {
-      src: "/IMG_7674.JPG",
+      src: "/f5fc9757-1f9f-4179-afb4-33e46cddcc84.JPG",
       alt: "Gallery image 2"
     },
     {
