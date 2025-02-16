@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link href="/">
             <a className="flex items-center">
-              <img src="/logo.svg" alt="Crazy Cuts Studio" className="h-12" />
+              <img src="/crazy-cuts-logo.png" alt="Crazy Cuts Studio" className="h-10 md:h-12" />
             </a>
           </Link>
 
