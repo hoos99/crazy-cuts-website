@@ -1,8 +1,7 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Scissors } from "lucide-react";
 import { FaFemale } from "react-icons/fa";
-import { FaFaceSmile } from "react-icons/fa6";
-import { GiRazorBlade } from "react-icons/gi";
+import { GiRazor, GiBeard } from "react-icons/gi";
 
 const Services = () => {
   const services = [
@@ -14,12 +13,12 @@ const Services = () => {
     {
       name: "SHAVING & GROOMING",
       description: "From classic shaves and modern steam treatments to quick waxing solutions for a polished look—ideal for men who value impeccable style.",
-      icon: GiRazorBlade
+      icon: GiRazor
     },
     {
       name: "SCRUBS & FACIALS",
       description: "From a quick scrub to a luxurious facial—or even a soothing head massage—treat yourself to the perfect rejuvenation for mind and skin.",
-      icon: FaFaceSmile
+      icon: GiBeard
     },
     {
       name: "LADIES' WAX & THREAD",
