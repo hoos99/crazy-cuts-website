@@ -37,7 +37,7 @@ const About = () => {
                 {/* Top S-curve */}
                 <g>
                   <path
-                    d="M0,50 C50,20 150,80 200,50"
+                    d="M0,150 C50,120 150,60 200,80"
                     style={{
                       stroke: '#C8A448',
                       strokeWidth: '1.5',
@@ -47,14 +47,14 @@ const About = () => {
                     }}
                     className="animate-flow-line"
                   />
-                  <circle cx="0" cy="50" r="3" className="fill-[#C8A448] animate-glow-pulse" />
-                  <circle cx="200" cy="50" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="0" cy="150" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="200" cy="80" r="3" className="fill-[#C8A448] animate-glow-pulse" />
                 </g>
 
-                {/* Middle straight line */}
+                {/* Middle curve */}
                 <g>
                   <path
-                    d="M0,150 L200,150"
+                    d="M0,150 C50,150 150,150 200,150"
                     style={{
                       stroke: '#C8A448',
                       strokeWidth: '1.5',
@@ -68,10 +68,10 @@ const About = () => {
                   <circle cx="200" cy="150" r="3" className="fill-[#C8A448] animate-glow-pulse" />
                 </g>
 
-                {/* Bottom reverse S-curve */}
+                {/* Bottom curve */}
                 <g>
                   <path
-                    d="M0,250 C50,280 150,220 200,250"
+                    d="M0,150 C50,180 150,240 200,220"
                     style={{
                       stroke: '#C8A448',
                       strokeWidth: '1.5',
@@ -81,8 +81,8 @@ const About = () => {
                     }}
                     className="animate-flow-line"
                   />
-                  <circle cx="0" cy="250" r="3" className="fill-[#C8A448] animate-glow-pulse" />
-                  <circle cx="200" cy="250" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="0" cy="150" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="200" cy="220" r="3" className="fill-[#C8A448] animate-glow-pulse" />
                 </g>
               </svg>
             </div>
