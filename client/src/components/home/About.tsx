@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-24 justify-center items-center">
           {/* Our Story - Left Side */}
-          <div className="lg:w-1/3 relative z-10 lg:self-center">
+          <div className="lg:w-1/3 relative z-10 lg:self-start">
             <div className="bg-[#1C1C1C] p-6 rounded-lg border border-[#C8A448] transform transition-transform hover:scale-105">
               <h3 className="text-[#C8A448] font-oswald text-xl mb-4">
                 Our Story
@@ -32,25 +32,49 @@ const About = () => {
             </div>
 
             {/* SVG Connecting Lines - Desktop Only */}
-            <div className="hidden lg:block absolute right-[-96px] top-1/2 w-24 h-full -translate-y-1/2">
+            <div className="hidden lg:block absolute right-[-96px] top-0 w-24 h-full">
               <svg className="w-full h-full" preserveAspectRatio="none">
-                {TEAM_MEMBERS.map((_, index) => {
+                {/* First connecting line */}
+                <g>
+                  <path
+                    d="M0,0 C25,-10 75,33 100,33"
+                    style={{
+                      stroke: '#C8A448',
+                      strokeWidth: '1px',
+                      fill: 'none',
+                      strokeDasharray: '1000',
+                      strokeDashoffset: '1000',
+                    }}
+                    className="animate-flow-line"
+                  />
+                  {/* Start dot */}
+                  <circle
+                    cx="0"
+                    cy="0"
+                    r="3"
+                    className="fill-[#C8A448] animate-glow-pulse"
+                  />
+                  {/* End dot */}
+                  <circle
+                    cx="100%"
+                    cy="33%"
+                    r="3"
+                    className="fill-[#C8A448] animate-glow-pulse"
+                  />
+                </g>
+                {TEAM_MEMBERS.slice(1).map((_, index) => {
                   // Calculate different starting points for each line
-                  const y = index * 33.33 + 16.67;
-                  const startY = index === 0 ? 10 : // Top line starts higher
-                               index === 1 ? 50 : // Middle line starts at center
-                               90; // Bottom line starts lower
+                  const y = (index +1) * 33.33 + 16.67;
+                  const startY = index === 0 ? 50 : 90;
 
                   // Create S-shaped curve path using cubic Bezier curves
                   // Adjust control points to create smooth curves from different starting points
                   const pathD = index === 0 ?
-                    `M0,10 C25,5 75,${y + 10} 100,${y}` : // Top curve
-                    index === 1 ?
-                    `M0,50 C25,50 75,${y} 100,${y}` : // Middle straight curve
-                    `M0,90 C25,95 75,${y - 10} 100,${y}`; // Bottom curve
+                    `M0,50 C25,50 75,${y} 100,${y}` :
+                    `M0,90 C25,95 75,${y - 10} 100,${y}`;
 
                   return (
-                    <g key={`connector-${index}`}>
+                    <g key={`connector-${index + 1}`}>
                       <path
                         d={pathD}
                         style={{
