@@ -35,33 +35,34 @@ const About = () => {
             <div className="hidden lg:block absolute right-[-96px] top-1/2 w-24 h-full -translate-y-1/2">
               <svg className="w-full h-full" preserveAspectRatio="none">
                 {TEAM_MEMBERS.map((_, index) => {
-                  const yPosition = index === 0 ? "16.67%" : index === 1 ? "50%" : "83.33%";
-                  const pathD = `M0,${index * 33.33 + 16.67} C30,${index * 33.33 + 16.67} 70,${index * 33.33 + 16.67} 100,${index * 33.33 + 16.67}`;
+                  // Create S-shaped curve path using cubic Bezier curves
+                  const y = index * 33.33 + 16.67;
+                  const pathD = `M0,${y} C25,${y - 10} 75,${y + 10} 100,${y}`;
 
                   return (
                     <g key={`connector-${index}`}>
                       <path
                         d={pathD}
-                        className="stroke-[#C8A448]"
                         style={{
-                          strokeWidth: "1px",
-                          fill: "none",
-                          strokeDasharray: "1000",
-                          strokeDashoffset: "1000",
+                          stroke: '#C8A448',
+                          strokeWidth: '1px',
+                          fill: 'none',
+                          strokeDasharray: '1000',
+                          strokeDashoffset: '1000',
                         }}
                         className="animate-flow-line"
                       />
                       {/* Start dot */}
                       <circle
                         cx="0"
-                        cy={`${index * 33.33 + 16.67}%`}
+                        cy={`${y}%`}
                         r="3"
                         className="fill-[#C8A448] animate-glow-pulse"
                       />
                       {/* End dot */}
                       <circle
                         cx="100%"
-                        cy={`${index * 33.33 + 16.67}%`}
+                        cy={`${y}%`}
                         r="3"
                         className="fill-[#C8A448] animate-glow-pulse"
                       />
