@@ -1,7 +1,8 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Scissors } from "lucide-react";
 import { FaFemale } from "react-icons/fa";
-import { GiRazor, GiFace } from "react-icons/gi";
+import { FaFaceSmile } from "react-icons/fa6";
+import { GiRazor } from "react-icons/gi";
 
 const Services = () => {
   const services = [
@@ -18,7 +19,7 @@ const Services = () => {
     {
       name: "SCRUBS & FACIALS",
       description: "From a quick scrub to a luxurious facial—or even a soothing head massage—treat yourself to the perfect rejuvenation for mind and skin.",
-      icon: GiFace
+      icon: FaFaceSmile
     },
     {
       name: "LADIES' WAX & THREAD",
