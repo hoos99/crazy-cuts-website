@@ -59,7 +59,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Map */}
+          {/* Map - Lazy load with a placeholder */}
           <div className="h-[400px] md:h-full min-h-[400px] relative bg-[#1C1C1C] rounded-lg overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.6647205563287!2d28.1824534!3d-26.1849657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950dc6e5555555%3A0x0!2s95%206th%20Ave%2C%20Mayfair%2C%20Johannesburg%2C%202108!5e0!3m2!1sen!2sza!4v1707947486745!5w200"
@@ -70,6 +70,7 @@ const Contact = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Crazy Cuts Studio Location"
+              className="bg-[#1C1C1C]"
             ></iframe>
           </div>
         </div>
