@@ -12,7 +12,7 @@ const About = () => {
 
         <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-24 justify-center items-center">
           {/* Our Story - Left Side */}
-          <div className="lg:w-1/3 relative z-10 lg:self-start">
+          <div className="lg:w-1/3 relative z-10 lg:self-center">
             <div className="bg-[#1C1C1C] p-6 rounded-lg border border-[#C8A448] transform transition-transform hover:scale-105">
               <h3 className="text-[#C8A448] font-oswald text-xl mb-4">
                 Our Story
@@ -37,7 +37,7 @@ const About = () => {
                 {/* First connecting line */}
                 <g>
                   <path
-                    d="M0,0 C25,-10 75,33 100,33"
+                    d="M0,0 C25,20 75,-20 100,50"
                     style={{
                       stroke: '#C8A448',
                       strokeWidth: '1px',
@@ -57,52 +57,11 @@ const About = () => {
                   {/* End dot */}
                   <circle
                     cx="100%"
-                    cy="33%"
+                    cy="50%"
                     r="3"
                     className="fill-[#C8A448] animate-glow-pulse"
                   />
                 </g>
-                {TEAM_MEMBERS.slice(1).map((_, index) => {
-                  // Calculate different starting points for each line
-                  const y = (index +1) * 33.33 + 16.67;
-                  const startY = index === 0 ? 50 : 90;
-
-                  // Create S-shaped curve path using cubic Bezier curves
-                  // Adjust control points to create smooth curves from different starting points
-                  const pathD = index === 0 ?
-                    `M0,50 C25,50 75,${y} 100,${y}` :
-                    `M0,90 C25,95 75,${y - 10} 100,${y}`;
-
-                  return (
-                    <g key={`connector-${index + 1}`}>
-                      <path
-                        d={pathD}
-                        style={{
-                          stroke: '#C8A448',
-                          strokeWidth: '1px',
-                          fill: 'none',
-                          strokeDasharray: '1000',
-                          strokeDashoffset: '1000',
-                        }}
-                        className="animate-flow-line"
-                      />
-                      {/* Start dot */}
-                      <circle
-                        cx="0"
-                        cy={startY}
-                        r="3"
-                        className="fill-[#C8A448] animate-glow-pulse"
-                      />
-                      {/* End dot */}
-                      <circle
-                        cx="100%"
-                        cy={`${y}%`}
-                        r="3"
-                        className="fill-[#C8A448] animate-glow-pulse"
-                      />
-                    </g>
-                  );
-                })}
               </svg>
             </div>
           </div>
