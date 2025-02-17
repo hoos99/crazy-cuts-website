@@ -31,25 +31,44 @@ const About = () => {
               </div>
             </div>
 
-            {/* Connecting Lines - Desktop Only */}
-            <div className="hidden lg:block absolute right-[-96px] top-1/2 w-24 h-[200%] -translate-y-1/2">
-              {TEAM_MEMBERS.map((_, index) => (
-                <div
-                  key={`line-${index}`}
-                  className={cn(
-                    "absolute left-0 w-full h-[1px] bg-[#C8A448]",
-                    "before:absolute before:right-0 before:top-1/2 before:-translate-y-1/2",
-                    "before:w-1.5 before:h-1.5 before:bg-[#C8A448] before:rounded-full",
-                    "after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2",
-                    "after:w-1.5 after:h-1.5 after:bg-[#C8A448] after:rounded-full",
-                    {
-                      "top-[16.67%]": index === 0,
-                      "top-[50%]": index === 1,
-                      "top-[83.33%]": index === 2,
-                    }
-                  )}
-                />
-              ))}
+            {/* SVG Connecting Lines - Desktop Only */}
+            <div className="hidden lg:block absolute right-[-96px] top-1/2 w-24 h-full -translate-y-1/2">
+              <svg className="w-full h-full" preserveAspectRatio="none">
+                {TEAM_MEMBERS.map((_, index) => {
+                  const yPosition = index === 0 ? "16.67%" : index === 1 ? "50%" : "83.33%";
+                  const pathD = `M0,${index * 33.33 + 16.67} C30,${index * 33.33 + 16.67} 70,${index * 33.33 + 16.67} 100,${index * 33.33 + 16.67}`;
+
+                  return (
+                    <g key={`connector-${index}`}>
+                      <path
+                        d={pathD}
+                        className="stroke-[#C8A448]"
+                        style={{
+                          strokeWidth: "1px",
+                          fill: "none",
+                          strokeDasharray: "1000",
+                          strokeDashoffset: "1000",
+                        }}
+                        className="animate-flow-line"
+                      />
+                      {/* Start dot */}
+                      <circle
+                        cx="0"
+                        cy={`${index * 33.33 + 16.67}%`}
+                        r="3"
+                        className="fill-[#C8A448] animate-glow-pulse"
+                      />
+                      {/* End dot */}
+                      <circle
+                        cx="100%"
+                        cy={`${index * 33.33 + 16.67}%`}
+                        r="3"
+                        className="fill-[#C8A448] animate-glow-pulse"
+                      />
+                    </g>
+                  );
+                })}
+              </svg>
             </div>
           </div>
 

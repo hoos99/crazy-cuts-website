@@ -80,6 +80,14 @@ export default {
         "fade-in": {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" }
+        },
+        "flow-line": {
+          "0%": { strokeDashoffset: "1000" },
+          "100%": { strokeDashoffset: "0" }
+        },
+        "glow-pulse": {
+          "0%, 100%": { opacity: "0.6" },
+          "50%": { opacity: "1" }
         }
       },
       animation: {
@@ -88,7 +96,9 @@ export default {
         "spin-slow": "spin 5s linear infinite",
         "spin": "spin 1s linear infinite",
         "spin-y-slow": "spin-y 20s linear infinite",
-        "fade-in": "fade-in 0.5s ease-out forwards"
+        "fade-in": "fade-in 0.5s ease-out forwards",
+        "flow-line": "flow-line 2s ease-out forwards",
+        "glow-pulse": "glow-pulse 2s ease-in-out infinite"
       },
     },
   },
