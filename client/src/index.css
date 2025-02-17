@@ -73,6 +73,20 @@
   @keyframes glowPulse {
     0% {
       text-shadow: 0 0 5px #C8A448, 0 0 10px #C8A448;
+
+@keyframes glow-pulse-red {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+  }
+}
+
+.animate-glow-pulse-red {
+  animation: glow-pulse-red 2s infinite;
+}
+
       transform: scale(1);
     }
     50% {

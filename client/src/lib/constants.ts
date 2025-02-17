@@ -1,3 +1,6 @@
+
+import React from 'react';
+
 export const SERVICES = [
   {
     name: "Classic Haircut",
@@ -35,20 +38,26 @@ export const BUSINESS_HOURS = [
   { day: "Sunday", hours: "9:00 AM - 7:00 PM" }
 ];
 
-import React from 'react';
-
 export const TEAM_MEMBERS = [
   {
     name: "Jeeno",
     role: "Founder & Lead Stylist",
     title: "Master Barber",
-    description: <>Known for creating the Legendary <span className="text-red-600 animate-glow-pulse-red">JEENO FADE</span>—a style so sought-after, you might catch a queue just waiting for his magic. But if you see a line, fret not—his protégé has you covered.</>
+    description: React.createElement(React.Fragment, null, [
+      "Known for creating the Legendary ",
+      React.createElement("span", { className: "text-red-600 animate-glow-pulse-red", key: "jeeno-fade" }, "JEENO FADE"),
+      "—a style so sought-after, you might catch a queue just waiting for his magic. But if you see a line, fret not—his protégé has you covered."
+    ])
   },
   {
     name: "Minhaz",
     role: "Style Expert & Jeeno's Protégé",
     title: "Senior Barber",
-    description: <>Trained directly by Jeeno, Minhaz delivers a variation of the iconic <span className="text-red-600 animate-glow-pulse-red">JEENO FADE</span> with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required.</>
+    description: React.createElement(React.Fragment, null, [
+      "Trained directly by Jeeno, Minhaz delivers a variation of the iconic ",
+      React.createElement("span", { className: "text-red-600 animate-glow-pulse-red", key: "jeeno-fade-2" }, "JEENO FADE"),
+      " with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required."
+    ])
   },
   {
     name: "Madhvi",
