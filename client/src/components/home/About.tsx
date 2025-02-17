@@ -37,10 +37,10 @@ const About = () => {
                 {/* First connecting line */}
                 <g>
                   <path
-                    d="M0,100 C50,90 150,130 200,100"
+                    d="M0,80 C50,40 150,160 200,100"
                     style={{
                       stroke: '#C8A448',
-                      strokeWidth: '2',
+                      strokeWidth: '1.5',
                       fill: 'none',
                       strokeDasharray: '1000',
                       strokeDashoffset: '1000',
@@ -50,15 +50,15 @@ const About = () => {
                   {/* Start dot */}
                   <circle
                     cx="0"
-                    cy="100"
-                    r="4"
+                    cy="80"
+                    r="3"
                     className="fill-[#C8A448] animate-glow-pulse"
                   />
                   {/* End dot */}
                   <circle
                     cx="200"
                     cy="100"
-                    r="4"
+                    r="3"
                     className="fill-[#C8A448] animate-glow-pulse"
                   />
                 </g>
