@@ -27,12 +27,12 @@ const Hero = () => {
           <img 
             src="/static/Crazy_Cuts_Transparent_Refined.png" 
             alt="Crazy Cuts Studio" 
-            className="mx-auto w-64 md:w-80"
+            className="mx-auto w-64 md:w-80 animate-spin-y"
             loading="eager"
           />
         </div>
 
-        <h1 className="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-6 tracking-wider">
+        <h1 className="font-['Bebas_Neue'] text-5xl md:text-7xl text-white mb-6 tracking-wider animate-fade-in">
           <span>PRECISION</span> <span>CUTS.</span> <span>TIMELESS</span> <span>STYLE</span>
         </h1>
 
