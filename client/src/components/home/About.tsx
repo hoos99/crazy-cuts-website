@@ -51,7 +51,7 @@ const About = () => {
                   <circle cx="180" cy="80" r="3" className="fill-[#C8A448] animate-glow-pulse" />
                 </g>
 
-                {/* Middle curve */}
+                {/* Middle straight line */}
                 <g>
                   <path
                     d="M0,150 C50,150 150,150 180,150"
@@ -68,7 +68,7 @@ const About = () => {
                   <circle cx="180" cy="150" r="3" className="fill-[#C8A448] animate-glow-pulse" />
                 </g>
 
-                {/* Bottom curve */}
+                {/* Bottom reverse S-curve */}
                 <g>
                   <path
                     d="M0,150 C50,180 150,240 180,220"
