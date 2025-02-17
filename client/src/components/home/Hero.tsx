@@ -37,7 +37,7 @@ const Hero = () => {
         </h1>
 
         <p className="font-['Bebas_Neue'] text-2xl md:text-3xl text-[#C8A448] mb-8 max-w-2xl mx-auto tracking-wide">
-          Step In for the Legendary <span className="text-[#FF0000] animate-glow-pulse-red">JEENO FADE</span>—Where Mastery Meets Style
+          Step In for the Legendary <span className="text-[#C8A448] animate-glow-pulse">JEENO FADE</span>—Where Mastery Meets Style
         </p>
 
         
