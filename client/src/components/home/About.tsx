@@ -35,9 +35,19 @@ const About = () => {
             <div className="hidden lg:block absolute right-[-96px] top-1/2 w-24 h-full -translate-y-1/2">
               <svg className="w-full h-full" preserveAspectRatio="none">
                 {TEAM_MEMBERS.map((_, index) => {
-                  // Create S-shaped curve path using cubic Bezier curves
+                  // Calculate different starting points for each line
                   const y = index * 33.33 + 16.67;
-                  const pathD = `M0,${y} C25,${y - 10} 75,${y + 10} 100,${y}`;
+                  const startY = index === 0 ? 10 : // Top line starts higher
+                               index === 1 ? 50 : // Middle line starts at center
+                               90; // Bottom line starts lower
+
+                  // Create S-shaped curve path using cubic Bezier curves
+                  // Adjust control points to create smooth curves from different starting points
+                  const pathD = index === 0 ?
+                    `M0,${startY} C25,${startY - 5} 75,${y + 10} 100,${y}` : // Top curve
+                    index === 1 ?
+                    `M0,${startY} C25,${startY} 75,${y} 100,${y}` : // Middle straight curve
+                    `M0,${startY} C25,${startY + 5} 75,${y - 10} 100,${y}`; // Bottom curve
 
                   return (
                     <g key={`connector-${index}`}>
@@ -55,7 +65,7 @@ const About = () => {
                       {/* Start dot */}
                       <circle
                         cx="0"
-                        cy={`${y}%`}
+                        cy={`${startY}%`}
                         r="3"
                         className="fill-[#C8A448] animate-glow-pulse"
                       />
