@@ -32,15 +32,15 @@ const About = () => {
             </div>
 
             {/* SVG Connecting Lines - Desktop Only */}
-            <div className="hidden lg:block absolute right-[-96px] top-0 w-24 h-full">
-              <svg className="w-full h-full" preserveAspectRatio="none">
+            <div className="hidden lg:block absolute right-[-200px] top-0 w-[200px] h-full">
+              <svg className="w-full h-full" viewBox="0 0 200 300" preserveAspectRatio="none">
                 {/* First connecting line */}
                 <g>
                   <path
-                    d="M0,20 C30,15 70,40 100,33"
+                    d="M0,100 C50,90 150,130 200,100"
                     style={{
                       stroke: '#C8A448',
-                      strokeWidth: '1px',
+                      strokeWidth: '2',
                       fill: 'none',
                       strokeDasharray: '1000',
                       strokeDashoffset: '1000',
@@ -50,15 +50,15 @@ const About = () => {
                   {/* Start dot */}
                   <circle
                     cx="0"
-                    cy="20"
-                    r="3"
+                    cy="100"
+                    r="4"
                     className="fill-[#C8A448] animate-glow-pulse"
                   />
                   {/* End dot */}
                   <circle
-                    cx="100%"
-                    cy="33%"
-                    r="3"
+                    cx="200"
+                    cy="100"
+                    r="4"
                     className="fill-[#C8A448] animate-glow-pulse"
                   />
                 </g>
