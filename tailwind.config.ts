@@ -76,6 +76,10 @@ export default {
         },
         "spin-y": {
           to: { transform: 'rotateY(360deg)' }
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" }
         }
       },
       animation: {
@@ -84,6 +88,7 @@ export default {
         "spin-slow": "spin 5s linear infinite",
         "spin": "spin 1s linear infinite",
         "spin-y-slow": "spin-y 20s linear infinite",
+        "fade-in": "fade-in 0.5s ease-out forwards"
       },
     },
   },
