@@ -44,10 +44,10 @@ const About = () => {
                   // Create S-shaped curve path using cubic Bezier curves
                   // Adjust control points to create smooth curves from different starting points
                   const pathD = index === 0 ?
-                    `M0,${startY} C25,${startY - 5} 75,${y + 10} 100,${y}` : // Top curve
+                    `M0,10 C25,5 75,${y + 10} 100,${y}` : // Top curve
                     index === 1 ?
-                    `M0,${startY} C25,${startY} 75,${y} 100,${y}` : // Middle straight curve
-                    `M0,${startY} C25,${startY + 5} 75,${y - 10} 100,${y}`; // Bottom curve
+                    `M0,50 C25,50 75,${y} 100,${y}` : // Middle straight curve
+                    `M0,90 C25,95 75,${y - 10} 100,${y}`; // Bottom curve
 
                   return (
                     <g key={`connector-${index}`}>
@@ -65,7 +65,7 @@ const About = () => {
                       {/* Start dot */}
                       <circle
                         cx="0"
-                        cy={`${startY}%`}
+                        cy={startY}
                         r="3"
                         className="fill-[#C8A448] animate-glow-pulse"
                       />
