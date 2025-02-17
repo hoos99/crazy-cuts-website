@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const SERVICES = [
@@ -45,7 +44,7 @@ export const TEAM_MEMBERS = [
     title: "Master Barber",
     description: React.createElement(React.Fragment, null, [
       "Known for creating the Legendary ",
-      React.createElement("span", { className: "text-red-600 animate-glow-pulse-red", key: "jeeno-fade" }, "JEENO FADE"),
+      React.createElement("span", { className: "text-yellow-600", key: "jeeno-fade" }, "JEENO FADE"),
       "—a style so sought-after, you might catch a queue just waiting for his magic. But if you see a line, fret not—his protégé has you covered."
     ])
   },
@@ -55,7 +54,7 @@ export const TEAM_MEMBERS = [
     title: "Senior Barber",
     description: React.createElement(React.Fragment, null, [
       "Trained directly by Jeeno, Minhaz delivers a variation of the iconic ",
-      React.createElement("span", { className: "text-red-600 animate-glow-pulse-red", key: "jeeno-fade-2" }, "JEENO FADE"),
+      React.createElement("span", { className: "text-yellow-600", key: "jeeno-fade-2" }, "JEENO FADE"),
       " with his own modern twist. Whether you want a classic cut or the signature fade, Minhaz is ready to transform your look—no long wait required."
     ])
   },
