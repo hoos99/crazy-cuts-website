@@ -34,7 +34,7 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
   };
 
   return (
-    <div className={`relative w-full max-w-xs mx-auto h-[300px] ${className}`}>
+    <div className={`relative w-full max-w-[200px] mx-auto h-[300px] ${className}`}>
       <div className="absolute inset-0 [perspective:800px]">
         <div 
           className="relative w-full h-full [transform-style:preserve-3d] transition-transform duration-700 ease-in-out"
@@ -57,10 +57,10 @@ export const RotatingGallery = ({ className }: RotatingGalleryProps) => {
                 <img
                   src={image}
                   alt={`Professional barbershop image ${index + 1}`}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40 rounded-lg" />
-                <div className="absolute inset-0 shadow-[0_0_10px_rgba(0,0,0,0.2)] rounded-lg" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/40" />
+                <div className="absolute inset-0 shadow-[0_0_10px_rgba(0,0,0,0.2)]" />
               </div>
             );
           })}
