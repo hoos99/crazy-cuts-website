@@ -10,11 +10,11 @@ const About = () => {
         </h2>
         <div className="w-20 h-1 bg-[#C8A448] mx-auto mb-12"></div>
 
-        <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-24 justify-center">
+        <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-24 justify-center items-center">
           {/* Our Story - Left Side */}
-          <div className="lg:w-1/3 relative z-10">
+          <div className="lg:w-1/3 relative z-10 lg:self-center">
             <div className="bg-[#1C1C1C] p-6 rounded-lg border border-[#C8A448] transform transition-transform hover:scale-105">
-              <h3 className="font-montserrat text-xl text-[#C8A448] mb-4 font-bold">
+              <h3 className="text-[#C8A448] font-oswald text-xl mb-4">
                 Our Story
               </h3>
               <div className="font-lora text-gray-300 text-sm space-y-3">
@@ -32,14 +32,16 @@ const About = () => {
             </div>
 
             {/* Connecting Lines - Desktop Only */}
-            <div className="hidden lg:block absolute right-0 top-1/2 w-24 h-[200%] -translate-y-1/2">
+            <div className="hidden lg:block absolute right-[-96px] top-1/2 w-24 h-[200%] -translate-y-1/2">
               {TEAM_MEMBERS.map((_, index) => (
                 <div
                   key={`line-${index}`}
                   className={cn(
-                    "absolute left-0 w-full h-[1px] bg-[#C8A448] opacity-60",
+                    "absolute left-0 w-full h-[1px] bg-[#C8A448]",
                     "before:absolute before:right-0 before:top-1/2 before:-translate-y-1/2",
                     "before:w-1.5 before:h-1.5 before:bg-[#C8A448] before:rounded-full",
+                    "after:absolute after:left-0 after:top-1/2 after:-translate-y-1/2",
+                    "after:w-1.5 after:h-1.5 after:bg-[#C8A448] after:rounded-full",
                     {
                       "top-[16.67%]": index === 0,
                       "top-[50%]": index === 1,
