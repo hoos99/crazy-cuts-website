@@ -34,10 +34,10 @@ const About = () => {
             {/* SVG Connecting Lines - Desktop Only */}
             <div className="hidden lg:block absolute right-[-200px] top-0 w-[200px] h-full">
               <svg className="w-full h-full" viewBox="0 0 200 300" preserveAspectRatio="none">
-                {/* First connecting line */}
+                {/* Top S-curve */}
                 <g>
                   <path
-                    d="M0,80 C50,40 150,160 200,100"
+                    d="M0,50 C50,20 150,80 200,50"
                     style={{
                       stroke: '#C8A448',
                       strokeWidth: '1.5',
@@ -47,20 +47,42 @@ const About = () => {
                     }}
                     className="animate-flow-line"
                   />
-                  {/* Start dot */}
-                  <circle
-                    cx="0"
-                    cy="80"
-                    r="3"
-                    className="fill-[#C8A448] animate-glow-pulse"
+                  <circle cx="0" cy="50" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="200" cy="50" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                </g>
+
+                {/* Middle straight line */}
+                <g>
+                  <path
+                    d="M0,150 L200,150"
+                    style={{
+                      stroke: '#C8A448',
+                      strokeWidth: '1.5',
+                      fill: 'none',
+                      strokeDasharray: '1000',
+                      strokeDashoffset: '1000',
+                    }}
+                    className="animate-flow-line"
                   />
-                  {/* End dot */}
-                  <circle
-                    cx="200"
-                    cy="100"
-                    r="3"
-                    className="fill-[#C8A448] animate-glow-pulse"
+                  <circle cx="0" cy="150" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="200" cy="150" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                </g>
+
+                {/* Bottom reverse S-curve */}
+                <g>
+                  <path
+                    d="M0,250 C50,280 150,220 200,250"
+                    style={{
+                      stroke: '#C8A448',
+                      strokeWidth: '1.5',
+                      fill: 'none',
+                      strokeDasharray: '1000',
+                      strokeDashoffset: '1000',
+                    }}
+                    className="animate-flow-line"
                   />
+                  <circle cx="0" cy="250" r="3" className="fill-[#C8A448] animate-glow-pulse" />
+                  <circle cx="200" cy="250" r="3" className="fill-[#C8A448] animate-glow-pulse" />
                 </g>
               </svg>
             </div>
